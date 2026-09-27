@@ -1,0 +1,22 @@
+{
+  "id":"instagram-Dbi2JNzRFE5",
+  "url":"https://www.instagram.com/reel/Dbi2JNzRFE5/",
+  "platform":"Instagram",
+  "platformId":"Dbi2JNzRFE5",
+  "title":"고양이 두 마리와 파도",
+  "summary":"약 8초 길이의 고양이 두 마리와 파도 영상.",
+  "description":"짧은 동물 영상 레퍼런스. HANDOFF의 확인 기록을 바탕으로 등록했다. 구체적인 촬영 기법과 장면별 시간은 기록에 없어 단정하지 않는다.",
+  "categories":["direction"],
+  "tags":["동물","숏폼"],
+  "durationSeconds":8,
+  "addedAt":"2026-09-27T00:00:00Z",
+  "thumbnail":"media/instagram-Dbi2JNzRFE5/scene-3.webp",
+  "scenes":[
+    {"seconds":0.8,"image":"media/instagram-Dbi2JNzRFE5/scene-1.webp","description":"파도가 보이는 모래사장에 흰색 고양이가 서 있는 도입 화면."},
+    {"seconds":3,"image":"media/instagram-Dbi2JNzRFE5/scene-2.webp","description":"옆에서 갈색 고양이가 다가온 화면."},
+    {"seconds":5,"image":"media/instagram-Dbi2JNzRFE5/scene-3.webp","description":"고양이 두 마리가 나란히 앞발을 들고 있는 화면."},
+    {"seconds":7,"image":"media/instagram-Dbi2JNzRFE5/scene-4.webp","description":"두 고양이 뒤로 파도가 보이는 후반 화면."}
+  ],
+  "sourceNote":"분석 요약은 TEST HANDOFF 기반. 원본 영상에서 2026-09-27에 캡처를 추출하고 화면을 확인했다. 음성·대본은 재검수하지 않았다.",
+  "caution":"원본 메타데이터는 @thv의 할리우드 공연 관람에 관한 일본어 문구로, 실제 영상과 불일치한다. 제목은 원제 대신 내용을 설명하는 이름이다."
+}

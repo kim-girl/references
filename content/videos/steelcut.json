@@ -1,0 +1,24 @@
+{
+  "id":"youtube-tRJIF5UHUm0",
+  "url":"https://www.youtube.com/watch?v=tRJIF5UHUm0",
+  "platform":"YouTube",
+  "platformId":"tRJIF5UHUm0",
+  "title":"AI 로판 [빙의는 했는데 얼굴이 따라왔습니다] 1화",
+  "creator":"Studio STEELCUT",
+  "summary":"AI 제작 로맨스 판타지 패러디 드라마. 빠른 설정 소개와 기대 뒤집기, 다음 화 예고가 참고 포인트다.",
+  "description":"약 60초의 숏폼에서 설정을 빠르게 소개하고 기대를 뒤집은 뒤 다음 화를 예고하는 구성. 로맨스 판타지 패러디와 코미디의 연출 레퍼런스로 분류했다.",
+  "categories":["direction","editing"],
+  "tags":["AI 제작","숏폼","코미디"],
+  "durationSeconds":60,
+  "addedAt":"2026-09-27T00:02:00Z",
+  "thumbnail":"media/youtube-tRJIF5UHUm0/scene-2.webp",
+  "scenes":[
+    {"seconds":3,"image":"media/youtube-tRJIF5UHUm0/scene-1.webp","description":"‘AI 병맛 로판 드라마 -1화-’ 제목 아래 음식과 간편식이 놓인 화면."},
+    {"seconds":18,"image":"media/youtube-tRJIF5UHUm0/scene-2.webp","description":"안경을 쓴 인물의 얼굴을 가까이 보여주는 장면."},
+    {"seconds":37,"image":"media/youtube-tRJIF5UHUm0/scene-3.webp","description":"분홍색 의상을 입은 인물이 실내에서 말하는 장면."},
+    {"seconds":55,"image":"media/youtube-tRJIF5UHUm0/scene-4.webp","description":"성의 외관으로 전환된 후반 장면."}
+  ],
+  "sourceNote":"분석 요약은 TEST HANDOFF 기반. 원본 영상에서 2026-09-27에 캡처를 추출하고 화면을 확인했다. 대본 전문은 아직 없다.",
+  "caution":"기존 음성 인식에서 긴 귀족식 이름 등에 오인식이 있었다. 검수한 대본이 확보되기 전에는 정확한 녹취로 제공하지 않는다.",
+  "embed":{"provider":"youtube","id":"tRJIF5UHUm0"}
+}

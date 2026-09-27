@@ -1,0 +1,7 @@
+[
+  {"id":"direction","name":"연출"},
+  {"id":"camera","name":"촬영"},
+  {"id":"editing","name":"편집"},
+  {"id":"motion","name":"모션 그래픽"},
+  {"id":"tools","name":"도구·기능 사용법"}
+]

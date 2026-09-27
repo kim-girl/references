@@ -1,0 +1,28 @@
+# Hermes용 콘텐츠 규칙
+
+## 저장과 검증
+
+- 영상마다 `content/videos/<id>.json` 하나를 관리한다. `id`는 영문·숫자·하이픈·밑줄만 사용하고 한번 정하면 유지한다.
+- 필수: `id`, `url`, `title`, `summary`(짧은 요약), `description`(참고 포인트), `categories`(한 개 이상의 카테고리 ID), `addedAt`(최초 수집 시각, 시간대가 포함된 ISO 8601 형식).
+- `addedAt`은 레퍼런스를 처음 수집한 시각이다. 원본 영상 게시일이나 재분석 날짜와 구분하며, 갱신 시 유지한다. 목록과 상세 페이지에서 한국 시간 기준 수집 날짜를 표시한다. 실제 수집 시각을 기록하고 정렬을 위해 임의 시각을 만들지 않는다.
+- 선택: `platform`, `platformId`, `creator`, `durationSeconds`, `tags`, `thumbnail`, `scenes`, `transcript`, `note`(개인 메모), `sourceNote`(분석 출처), `caution`(불확실성·메타데이터 불일치 등), `embed`.
+- `scenes`는 `{ "seconds": 12, "image": "media/영상ID/scene-1.webp", "description": "확인한 장면 설명" }` 배열이다. 확보한 정보만 적는다.
+- `transcript`는 `{ "text": "검수한 대본", "source": "공식 자막 / STT 검수 등 출처와 불확실성" }`이다. 불확실한 대사는 `[불명확]`로 표시한다. 설명을 대사로 만들지 않는다.
+- 이미지는 `content/media/`에 WebP로 저장한다. 데이터에는 `media/…` 상대 경로를 적는다. `thumbnail`이 없으면 목록에 텍스트 카드를 표시한다.
+- 카테고리 파일의 ID와 표시 이름은 분리한다. 이름만 변경하면 참조는 유지된다. 삭제·병합은 모든 관련 영상의 참조도 함께 수정한다.
+- 태그는 기존 목록을 우선 재사용한다. 동의어를 새 태그로 늘리지 않는다. 꼭 필요한 새 태그는 `content/tags.json`에도 추가한다.
+- 현재 임베드는 검증 가능한 YouTube만 구현했다: `"embed": {"provider":"youtube","id":"tRJIF5UHUm0"}`. 다른 플랫폼의 임베드 지원은 제공 방식 확인 후 어댑터를 추가한다. 임의 HTML은 저장하지 않는다.
+- `npm run build`와 `npm test`가 성공한 산출물만 출판한다. 실패 시 현재 사이트를 교체하지 않는다. 배포 대상은 `dist/` 전체다.
+
+## URL 정규화와 중복
+
+- 입력 링크 원형이 필요하면 별도 `originalUrl`에 보존하고, `url`에는 정규화한 원본 링크를 적는다.
+- YouTube의 Shorts·youtu.be·watch 링크는 영상 ID로 통일해 `https://www.youtube.com/watch?v=<ID>`로 저장한다. 재생 목록·시간·추적 매개변수는 제거한다.
+- Instagram Reel은 `https://www.instagram.com/reel/<ID>/`로 저장하고 공유·추적 매개변수는 제거한다. 다른 게시물 유형을 임의로 Reel로 바꾸지 않는다.
+- 다른 출처는 추적 매개변수만 제거하고 영상 식별에 필요한 매개변수는 보존한다. 알 수 없는 매개변수를 무조건 삭제하지 않는다.
+- `(platform, platformId)` 또는 정규화 URL로 기존 항목을 찾는다. 제목으로 중복 판정하지 않는다. 재등록 시 기존 ID·추가일·개인 메모를 유지하면서 분석 데이터를 갱신한다.
+- 다운로드·원본 분석은 외부 Hermes 서버의 책임이다. 이 저장소에서는 수집기를 구현하지 않는다.
+
+## 사실과 누락
+
+영상·음성을 확인한 내용과 추론, 홍보 주장을 구분한다. 메타데이터를 줄거리로 그대로 사용하지 않는다. 캡처나 대본이 없다면 필드를 생략한다. 샘플의 `sourceNote`처럼 자료 출처와 재검수 여부를 기록한다.
