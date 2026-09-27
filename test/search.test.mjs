@@ -5,6 +5,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
+import {createHash} from 'node:crypto';
 import {search} from '../site/search.mjs';
 const categories = [{id:'direction',name:'연출'},{id:'tools',name:'도구·기능 사용법'}];
 const base = {categories:['direction'],tags:[],addedAt:'2026-09-27',summary:'',description:''};
@@ -92,4 +93,47 @@ test('남은 초기 샘플 모두 실제 캡처 네 장과 썸네일 포함', as
       assert.ok(html.includes(scene.image));
     }
   }
+});
+test('PWA 아이콘과 manifest를 제공하고 미디어 변경을 URL에 반영한다', async () => {
+  const manifest = JSON.parse(await readFile('dist/manifest.webmanifest','utf8'));
+  assert.equal(manifest.display,'standalone');
+  const staticAssets = ['style.css','app.mjs','search.mjs','pwa.mjs','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
+  const staticHash = createHash('sha256');
+  for (const asset of staticAssets) staticHash.update(asset).update(await readFile(`site/${asset}`));
+  const staticVersion = staticHash.digest('hex').slice(0,12);
+  for (const icon of manifest.icons) {
+    assert.ok(icon.src.endsWith(`?v=${staticVersion}`));
+    const bytes = await readFile(`dist/${icon.src.split('?')[0]}`);
+    const size = Number(icon.sizes.split('x')[0]);
+    assert.equal(bytes.readUInt32BE(16),size);
+    assert.equal(bytes.readUInt32BE(20),size);
+  }
+  const appleIcon = await readFile('dist/apple-touch-icon.png');
+  assert.equal(appleIcon.readUInt32BE(16),180);
+  assert.equal(appleIcon.readUInt32BE(20),180);
+  const html = await readFile('dist/index.html','utf8');
+  assert.match(html,/rel="manifest"/);
+  assert.match(html,/rel="apple-touch-icon"/);
+  assert.match(html,/pwa\.mjs/);
+  for (const asset of ['manifest.webmanifest','icon-192.png','apple-touch-icon.png','style.css','pwa.mjs','app.mjs']) {
+    assert.ok(html.includes(`${asset}?v=${staticVersion}`));
+  }
+  assert.ok((await readFile('dist/app.mjs','utf8')).includes(`search.mjs?v=${staticVersion}`));
+  for (const file of await readdir('content/videos')) {
+    if (!file.endsWith('.json')) continue;
+    const video = JSON.parse(await readFile(`content/videos/${file}`,'utf8'));
+    if (video.thumbnail) {
+      const bytes = await readFile(`content/${video.thumbnail}`);
+      const version = createHash('sha256').update(bytes).digest('hex').slice(0,12);
+      assert.ok(html.includes(`${video.thumbnail}?v=${version}`));
+    }
+    const detail = await readFile(`dist/videos/${video.id}.html`,'utf8');
+    for (const scene of video.scenes || []) {
+      if (!scene.image) continue;
+      const bytes = await readFile(`content/${scene.image}`);
+      const version = createHash('sha256').update(bytes).digest('hex').slice(0,12);
+      assert.ok(detail.includes(`${scene.image}?v=${version}`));
+    }
+  }
+  assert.match(await readFile('dist/pwa.mjs','utf8'),/searchParams\.set\('refresh'/);
 });

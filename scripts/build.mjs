@@ -1,11 +1,12 @@
-import {readFile, readdir, mkdir, writeFile, cp, rm, access} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {readFile, readdir, mkdir, writeFile, cp, rm} from 'node:fs/promises';
 const read = async path => JSON.parse(await readFile(path, 'utf8'));
 const categories = await read('content/categories.json');
 const tags = await read('content/tags.json');
 const files = (await readdir('content/videos')).filter(f => f.endsWith('.json'));
 const videos = await Promise.all(files.map(f => read(`content/videos/${f}`)));
 const names = Object.fromEntries(categories.map(c => [c.id,c.name]));
-const ids = new Set(), urls = new Set();
+const ids = new Set(), urls = new Set(), mediaVersions = new Map();
 for (const v of videos) {
   for (const field of ['id','url','title','summary','description','addedAt']) if (typeof v[field] !== 'string' || !v[field].trim()) throw Error(`${v.id}: ${field} is required`);
   if (!/^[a-zA-Z0-9_-]+$/.test(v.id)) throw Error('Invalid ID');
@@ -20,24 +21,39 @@ for (const v of videos) {
   if (v.embed && (v.embed.provider !== 'youtube' || !/^[\w-]{11}$/.test(v.embed.id))) throw Error(`${v.id}: unsupported embed`);
   for (const image of [v.thumbnail, ...(v.scenes || []).map(s => s.image)].filter(Boolean)) {
     if (!/^media\/[\w./-]+$/.test(image) || image.includes('..')) throw Error('Invalid media path');
-    await access(`content/${image}`);
+    if (!mediaVersions.has(image)) {
+      const bytes = await readFile(`content/${image}`);
+      mediaVersions.set(image, createHash('sha256').update(bytes).digest('hex').slice(0,12));
+    }
   }
 }
+const staticAssets = ['style.css','app.mjs','search.mjs','pwa.mjs','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png'];
+const staticHash = createHash('sha256');
+for (const asset of staticAssets) staticHash.update(asset).update(await readFile(`site/${asset}`));
+const staticVersion = staticHash.digest('hex').slice(0,12);
+const assetUrl = (path, prefix = '') => `${prefix}${path}?v=${staticVersion}`;
+const manifest = JSON.parse(await readFile('site/manifest.webmanifest','utf8'));
+manifest.icons = manifest.icons.map(icon => ({...icon,src:assetUrl(icon.src)}));
+const manifestContent = `${JSON.stringify(manifest,null,2)}\n`;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const mediaUrl = (path, prefix = '') => `${prefix}${esc(path)}?v=${mediaVersions.get(path)}`;
 const dateFormat = new Intl.DateTimeFormat('sv-SE', {timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'});
 const pills = v => (v.categories.length ? v.categories.map(c => `<span class="pill">${esc(names[c])}</span>`).join('') : '<span class="pill">볼 점 미분류</span>') + `<span class="collected-date">수집 날짜 · <time datetime="${esc(v.addedAt)}">${dateFormat.format(new Date(v.addedAt))}</time></span>`;
-const image = (v, prefix) => v.thumbnail ? `<img src="${prefix}${esc(v.thumbnail)}" alt="${esc(v.title)}" loading="lazy">` : `<div class="paper-preview" aria-hidden="true"><span>${v.platform === 'YouTube' ? '▷' : '✳'}</span><b>${esc(v.categories.map(c => names[c]).join(' · '))}</b><small>${esc(v.platform)} · 약 ${esc(v.durationSeconds ?? '?')}초</small></div>`;
-const page = (title, body, prefix = '') => `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${esc(title)} · 영감 서랍</title><link rel="stylesheet" href="${prefix}style.css"></head><body><header><a class="brand" href="${prefix}index.html"><span>✳</span> 영감 서랍</a><span class="header-note">다시 보고 싶은 순간들</span></header><main>${body}</main><footer>차곡차곡 모아 두는 영상 레퍼런스 <span>✿</span></footer></body></html>`;
+const image = (v, prefix) => v.thumbnail ? `<img src="${mediaUrl(v.thumbnail,prefix)}" alt="${esc(v.title)}" loading="lazy">` : `<div class="paper-preview" aria-hidden="true"><span>${v.platform === 'YouTube' ? '▷' : '✳'}</span><b>${esc(v.categories.map(c => names[c]).join(' · '))}</b><small>${esc(v.platform)} · 약 ${esc(v.durationSeconds ?? '?')}초</small></div>`;
+const page = (title, body, prefix = '') => `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="theme-color" content="#dfeccc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="영감 서랍"><title>${esc(title)} · 영감 서랍</title><link rel="manifest" href="${assetUrl('manifest.webmanifest',prefix)}"><link rel="icon" type="image/png" sizes="192x192" href="${assetUrl('icon-192.png',prefix)}"><link rel="apple-touch-icon" href="${assetUrl('apple-touch-icon.png',prefix)}"><link rel="stylesheet" href="${assetUrl('style.css',prefix)}"></head><body><div class="pull-refresh" id="pull-refresh" role="status" aria-live="polite" aria-hidden="true">아래로 당겨 새로고침</div><header><a class="brand" href="${prefix}index.html"><span>✳</span> 영감 서랍</a><span class="header-note">다시 보고 싶은 순간들</span></header><main>${body}</main><footer>차곡차곡 모아 두는 영상 레퍼런스 <span>✿</span></footer><script type="module" src="${assetUrl('pwa.mjs',prefix)}"></script></body></html>`;
 videos.sort((a,b) => Date.parse(b.addedAt) - Date.parse(a.addedAt));
 const filters = (list, type) => list.map(c => `<button type="button" data-filter="${type}" data-value="${esc(c.id ?? c)}" aria-pressed="false">${esc(c.name ?? c)}</button>`).join('');
 const cards = videos.map(v => `<article class="card" data-id="${esc(v.id)}"><a class="card-link" href="videos/${esc(v.id)}.html">${image(v,'')}<div class="card-body"><div class="eyebrow">${esc(v.platform)}${v.creator ? ` · ${esc(v.creator)}` : ''}</div><h2>${esc(v.title)}</h2><p>${esc(v.summary)}</p><div class="pills">${pills(v)}</div><p class="match"></p></div></a></article>`).join('');
 await rm('dist', {recursive:true,force:true});
 await mkdir('dist/videos', {recursive:true});
 await cp('site','dist',{recursive:true});
+await writeFile('dist/manifest.webmanifest',manifestContent);
+const appSource = await readFile('site/app.mjs','utf8');
+await writeFile('dist/app.mjs',appSource.replace("'./search.mjs'",`'./search.mjs?v=${staticVersion}'`));
 try { await cp('content/media','dist/media',{recursive:true}); } catch (e) { if (e.code !== 'ENOENT') throw e; }
-await writeFile('dist/index.html',page('모든 레퍼런스',`<section class="intro"><div><p class="eyebrow">나의 작은 레퍼런스 모음</p><h1>좋은 장면은<br>다시 꺼내 보기.</h1><p>연출의 힌트부터 궁금했던 기능까지, 여기 모아 두었어요.</p></div><div class="intro-stamp" aria-hidden="true">KEEP<br>THE<br>SPARK ✷</div></section><section class="browse" aria-label="레퍼런스 검색과 필터"><label for="search">어떤 영감을 찾고 있나요?</label><input id="search" type="search" placeholder="예: API, 설정 소개, 고양이" autocomplete="off"><div class="filter-row"><span>주로 볼 점</span><div>${filters(categories,'category')}</div></div></section><div class="list-heading"><h2>모아 둔 영상</h2><span id="result-count" role="status">${videos.length}개의 레퍼런스</span><button id="reset" hidden>검색·필터 지우기</button></div><section id="cards" class="cards">${cards}</section><p id="empty" class="empty" hidden>일치하는 영상이 없어요. 검색어를 바꾸거나 필터를 줄여 보세요.</p><script id="catalog-data" type="application/json">${JSON.stringify({videos,categories}).replace(/</g,'\\u003c')}</script><script type="module" src="app.mjs"></script>`));
+await writeFile('dist/index.html',page('모든 레퍼런스',`<section class="intro"><div><p class="eyebrow">나의 작은 레퍼런스 모음</p><h1>좋은 장면은<br>다시 꺼내 보기.</h1><p>연출의 힌트부터 궁금했던 기능까지, 여기 모아 두었어요.</p></div><div class="intro-stamp" aria-hidden="true">KEEP<br>THE<br>SPARK ✷</div></section><section class="browse" aria-label="레퍼런스 검색과 필터"><label for="search">어떤 영감을 찾고 있나요?</label><input id="search" type="search" placeholder="예: API, 설정 소개, 고양이" autocomplete="off"><div class="filter-row"><span>주로 볼 점</span><div>${filters(categories,'category')}</div></div></section><div class="list-heading"><h2>모아 둔 영상</h2><span id="result-count" role="status">${videos.length}개의 레퍼런스</span><button id="reset" hidden>검색·필터 지우기</button></div><section id="cards" class="cards">${cards}</section><p id="empty" class="empty" hidden>일치하는 영상이 없어요. 검색어를 바꾸거나 필터를 줄여 보세요.</p><script id="catalog-data" type="application/json">${JSON.stringify({videos,categories}).replace(/</g,'\\u003c')}</script><script type="module" src="${assetUrl('app.mjs')}"></script>`));
 for (const v of videos) {
-  const scenes = (v.scenes || []).map(s => `<figure>${s.image ? `<img loading="lazy" src="../${esc(s.image)}" alt="${esc(s.description)}">` : ''}<figcaption>${s.seconds != null ? `<span>${Math.floor(s.seconds/60)}:${String(Math.floor(s.seconds%60)).padStart(2,'0')}</span> ` : ''}${esc(s.description)}</figcaption></figure>`).join('');
+  const scenes = (v.scenes || []).map(s => `<figure>${s.image ? `<img loading="lazy" src="${mediaUrl(s.image,'../')}" alt="${esc(s.description)}">` : ''}<figcaption>${s.seconds != null ? `<span>${Math.floor(s.seconds/60)}:${String(Math.floor(s.seconds%60)).padStart(2,'0')}</span> ` : ''}${esc(s.description)}</figcaption></figure>`).join('');
   await writeFile(`dist/videos/${v.id}.html`,page(v.title,`<a class="back" href="../index.html">← 서랍으로 돌아가기</a><article class="detail"><div class="eyebrow">${esc(v.platform)}${v.creator ? ` · ${esc(v.creator)}` : ''}${v.durationSeconds ? ` · 약 ${v.durationSeconds}초` : ''}</div><h1>${esc(v.title)}</h1><p class="lead">${esc(v.summary)}</p><div class="pills">${pills(v)}</div><a class="source-link" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">원본 영상 보기 ↗</a>${v.embed ? `<div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/${esc(v.embed.id)}" title="${esc(v.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>` : ''}<section><h2>참고할 포인트</h2><p class="prose">${esc(v.description)}</p></section>${v.note ? `<section class="note"><h2>나의 메모</h2><p class="prose">${esc(v.note)}</p></section>` : ''}${scenes ? `<section><h2>주요 장면</h2><div class="scenes">${scenes}</div></section>` : ''}${v.transcript?.text ? `<details><summary>대본 펼쳐 보기</summary>${v.transcript.source ? `<p>${esc(v.transcript.source)}</p>` : ''}<p class="prose">${esc(v.transcript.text)}</p></details>` : ''}${v.caution ? `<aside class="caution"><h2>확인하고 볼 내용</h2><p>${esc(v.caution)}</p></aside>` : ''}${v.sourceNote ? `<p class="source-note">${esc(v.sourceNote)}</p>` : ''}</article>`,'../'));
 }
 console.log(`Built ${videos.length} references → dist/`);
