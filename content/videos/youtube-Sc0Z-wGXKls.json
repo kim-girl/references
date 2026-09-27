@@ -1,0 +1,30 @@
+{
+  "id": "youtube-Sc0Z-wGXKls",
+  "url": "https://www.youtube.com/watch?v=Sc0Z-wGXKls",
+  "originalUrl": "https://www.youtube.com/shorts/Sc0Z-wGXKls",
+  "platform": "YouTube",
+  "platformId": "Sc0Z-wGXKls",
+  "title": "사회화 끝난 T",
+  "creator": "띱 Deep",
+  "summary": "오래 쓴 휴대폰에 추억이 쌓였다는 친구에게 중고 판매의 실리를 떠올리면서도 공감하려 애쓰는 인물을 그린 대화형 코미디 광고.",
+  "description": "두 인물의 대화와 반응 숏을 교차해 추억에 대한 감정과 중고폰 판매의 경제성을 대비한다. 남성 인물의 속마음을 노란 자막으로 드러내 겉으로 하는 공감과 실제 생각 사이의 간극을 웃음으로 만들고, 친구에게 핸드폰을 팔라고 권하고 싶은 마음을 눌렀다가 마지막에 자신의 폰은 팔겠다고 답하는 반전으로 마무리한다. 게시물 설명에는 중고폰 매입 서비스 소녀폰으로 연결하는 링크가 있다. 브랜드의 매입가·유리함은 광고 맥락의 주장이지 독립 검증된 사실은 아니다.",
+  "categories": ["direction", "editing"],
+  "tags": ["숏폼", "코미디"],
+  "durationSeconds": 106,
+  "addedAt": "2026-09-27T23:49:49+09:00",
+  "thumbnail": "media/youtube-Sc0Z-wGXKls/scene-3.webp",
+  "scenes": [
+    {"seconds": 8, "image": "media/youtube-Sc0Z-wGXKls/scene-1.webp", "description": "줄무늬 상의를 입은 인물이 휴대폰을 들고 4년 동안 사용했다고 말하는 장면."},
+    {"seconds": 27, "image": "media/youtube-Sc0Z-wGXKls/scene-2.webp", "description": "휴대폰을 버리지 않고 간직하겠다고 말하며 미소 짓는 인물의 클로즈업."},
+    {"seconds": 40, "image": "media/youtube-Sc0Z-wGXKls/scene-3.webp", "description": "휴대폰을 화면 쪽으로 들어 보이는 장면과 중고폰 가격을 언급하는 자막."},
+    {"seconds": 75, "image": "media/youtube-Sc0Z-wGXKls/scene-4.webp", "description": "안경을 쓴 인물의 클로즈업과 '세상은 효율이 다가 아니야'라는 노란 자막."},
+    {"seconds": 99, "image": "media/youtube-Sc0Z-wGXKls/scene-5.webp", "description": "후반부 대화에서 상대를 바라보는 안경 쓴 인물의 반응 숏."}
+  ],
+  "transcript": {
+    "text": "[발췌·중략] 친구: '근데 내가 얘를 4년이나 썼거든.' / '그래서 안 버리고 그냥 간직하려고.' [중략] 속마음 자막: '세상은 효율이 다가 아니야.' [중략] 마지막 대사: '아니 난 팔 거야.'",
+    "source": "실제 영상 프레임의 화면 자막과 YouTube 한국어 자동 자막을 대조한 일부 발췌. 자동 자막에는 고유명사 및 대사 오인식이 있어 전문 녹취는 제공하지 않음."
+  },
+  "sourceNote": "2026-09-27에 yt-dlp로 실제 영상과 한국어 자동 자막을 확보하고 ffprobe로 약 105.5초 영상/음성 스트림을 확인했다. 전 구간 접촉시트와 대표 장면 5장을 검수했다. 게시자/제목은 YouTube 메타데이터, 내용은 화면·자막을 대조했다.",
+  "caution": "게시물 설명은 소녀폰 광고 링크를 포함한다. 자동 자막의 '수녀폰', '부족' 등은 화면 맥락과 맞지 않아 정확한 전문 대본으로 쓰지 않았다. 중고폰 매입 가격·조건은 독립 검증하지 않았다.",
+  "embed": {"provider": "youtube", "id": "Sc0Z-wGXKls"}
+}
