@@ -1,0 +1,23 @@
+{
+  "id": "instagram-DcROaBbvCrA",
+  "url": "https://www.instagram.com/reel/DcROaBbvCrA/",
+  "platform": "Instagram",
+  "platformId": "DcROaBbvCrA",
+  "creator": "@a_heavy_morning",
+  "title": "침대에서 일어나기 힘든 아침",
+  "summary": "침대에 누운 캐릭터가 몸을 일으켜 침대 끝에 앉기까지를 보여주는 짧은 게임 애니메이션.",
+  "description": "침대에 누운 인물의 표정과 손·팔 움직임을 가까이 보여주며 기상 직전의 망설임을 길게 잡는다. 상체를 일으킨 뒤 침대 가장자리에 앉는 동작으로 이어지고, 마지막에는 방을 위에서 내려다보는 넓은 화면으로 전환한다. 제한된 공간과 작은 동작, 클로즈업에서 부감으로 바뀌는 시점이 감정 표현과 장면 마무리의 참고점이다. 게시자는 자신의 게임에 들어가는 애니메이션에 음악과 효과음을 더했다고 설명한다.",
+  "categories": ["storytelling", "filming-effects"],
+  "tags": ["숏폼"],
+  "durationSeconds": 17.69,
+  "addedAt": "2026-09-28T00:48:16+09:00",
+  "thumbnail": "media/instagram-DcROaBbvCrA/scene-2.webp",
+  "scenes": [
+    {"seconds": 0, "image": "media/instagram-DcROaBbvCrA/scene-1.webp", "description": "긴 검은 머리의 애니메이션 캐릭터가 어두운 방의 침대에 누워 눈을 감고 있다."},
+    {"seconds": 4, "image": "media/instagram-DcROaBbvCrA/scene-2.webp", "description": "누운 상태에서 눈을 뜨고 옆을 돌아보는 인물의 상반신 클로즈업."},
+    {"seconds": 9, "image": "media/instagram-DcROaBbvCrA/scene-3.webp", "description": "인물이 상체를 일으켜 침대 가장자리에 앉는다."},
+    {"seconds": 15, "image": "media/instagram-DcROaBbvCrA/scene-4.webp", "description": "침대와 앉은 인물, 주변 방을 위에서 내려다보는 넓은 구도."}
+  ],
+  "sourceNote": "2026-09-28 공개 Instagram 페이지에서 게시 계정과 설명을 확인하고 원본 영상(17.69초)을 확보했다. 전 구간을 2초 간격으로 살펴보고 원본 프레임에서 대표 장면 4개를 캡처했다. 게임 애니메이션이라는 제작 맥락은 게시자의 설명에 따른다.",
+  "caution": "음성·음악 및 효과음은 별도로 청취·전사 검수하지 않아 대본을 싣지 않았다."
+}
