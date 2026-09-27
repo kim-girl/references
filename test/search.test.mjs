@@ -47,10 +47,11 @@ test('같은 종류 OR, 다른 종류 AND 및 빈 결과', () => {
   assert.equal(search(videos,categories,'',['direction'],['API']).length,0);
   assert.equal(search(videos,categories,'없는검색어').length,0);
 });
-test('주로 볼 점 다섯 개만 필터로 보이고 태그는 검색 데이터에만 남는다', async () => {
+test('색감과 기획·아이디어를 분리한 주로 볼 점 여섯 개만 필터로 보인다', async () => {
   const html = await readFile('dist/index.html','utf8');
   const choices = JSON.parse(await readFile('content/categories.json','utf8'));
-  assert.equal(choices.length,5);
+  assert.deepEqual(choices.map(c => c.name),['촬영·효과','현실 같은 비현실','인물+그림','색감','기획·아이디어','스토리텔링']);
+  assert.ok(!choices.some(c => c.id === 'color-ideas'));
   assert.match(html,/<span>주로 볼 점<\/span>/);
   assert.doesNotMatch(html,/<span>태그<\/span>|data-filter="tag"|class="tags"/);
   for (const choice of choices) assert.ok(html.includes(`data-value="${choice.id}"`));
