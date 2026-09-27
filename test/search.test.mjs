@@ -55,9 +55,10 @@ test('색감과 기획·아이디어를 분리한 주로 볼 점 여섯 개만 �
   assert.match(html,/<span>주로 볼 점<\/span>/);
   assert.doesNotMatch(html,/<span>태그<\/span>|data-filter="tag"|class="tags"/);
   for (const choice of choices) assert.ok(html.includes(`data-value="${choice.id}"`));
-  assert.ok(html.includes('볼 점 미분류'));
   const cats = JSON.parse(await readFile('content/videos/cats.json','utf8'));
-  assert.equal(search([cats],choices,'동물').length,1);
+  assert.deepEqual(cats.categories,['planning-ideas']);
+  assert.match(html,/고양이 두 마리와 파도/);
+  assert.equal(search([cats],choices,'동물',['planning-ideas']).length,1);
 });
 test('모든 HTML noindex 및 원본 링크, 누락된 대본 숨김', async () => {
   const content = await Promise.all((await readdir('content/videos')).filter(f=>f.endsWith('.json')).map(async f=>JSON.parse(await readFile(`content/videos/${f}`,'utf8'))));
