@@ -58,6 +58,11 @@ test('모든 HTML noindex 및 원본 링크, 누락된 대본 숨김', async () 
       assert.match(html,/수집 날짜/);
       const video = content.find(v=>file === `dist/videos/${v.id}.html`);
       assert.ok(video);
+      if (video.creator) {
+        const creator = video.creator.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        assert.ok(html.includes(creator));
+        assert.ok((await readFile('dist/index.html','utf8')).includes(creator));
+      }
       assert.equal(html.includes('대본 펼쳐 보기'),Boolean(video.transcript?.text));
     }
   }

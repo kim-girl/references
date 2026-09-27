@@ -6,6 +6,7 @@
 - 필수: `id`, `url`, `title`, `summary`(짧은 요약), `description`(참고 포인트), `categories`(한 개 이상의 카테고리 ID), `addedAt`(최초 수집 시각, 시간대가 포함된 ISO 8601 형식).
 - `addedAt`은 레퍼런스를 처음 수집한 시각이다. 원본 영상 게시일이나 재분석 날짜와 구분하며, 갱신 시 유지한다. 목록과 상세 페이지에서 한국 시간 기준 수집 날짜를 표시한다. 실제 수집 시각을 기록하고 정렬을 위해 임의 시각을 만들지 않는다.
 - 선택: `platform`, `platformId`, `creator`, `durationSeconds`, `tags`, `thumbnail`, `scenes`, `transcript`, `note`(개인 메모), `sourceNote`(분석 출처), `caution`(불확실성·메타데이터 불일치 등), `embed`.
+- `creator`에는 원본 게시 계정명 또는 채널명을 기록한다. 플랫폼에 관계없이 확보한 경우 목록과 상세 페이지에 표시한다. Instagram은 실제 게시 계정 핸들(`@account`)을 사용한다. 영상 설명에서 언급한 계정이나 영상 속 인물을 게시 계정으로 추측하지 않는다. 확보하지 못하면 생략한다.
 - `scenes`는 `{ "seconds": 12, "image": "media/영상ID/scene-1.webp", "description": "확인한 장면 설명" }` 배열이다. 확보한 정보만 적는다.
 - `transcript`는 `{ "text": "검수한 대본", "source": "공식 자막 / STT 검수 등 출처와 불확실성" }`이다. 불확실한 대사는 `[불명확]`로 표시한다. 설명을 대사로 만들지 않는다.
 - 이미지는 `content/media/`에 WebP로 저장한다. 데이터에는 `media/…` 상대 경로를 적는다. `thumbnail`이 없으면 목록에 텍스트 카드를 표시한다.

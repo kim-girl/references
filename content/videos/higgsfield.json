@@ -3,6 +3,7 @@
   "url":"https://www.instagram.com/reel/DdczWD4zgcl/",
   "platform":"Instagram",
   "platformId":"DdczWD4zgcl",
+  "creator":"@ai_oneman",
   "title":"힉스필드 API 키 생성과 GPT 연결",
   "summary":"구독 대신 사용량 결제를 홍보하며 API 키 생성과 GPT 연결 흐름을 소개하는 약 26초 영상.",
   "description":"소개 흐름은 API keys → 키 생성 → 키 복사 → GPT 연결이다. 기능 안내를 짧은 영상 안에 담는 구성의 레퍼런스다. 이 순서는 HANDOFF 요약이며 대본 전문이 아니다.",
