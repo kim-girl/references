@@ -1,0 +1,25 @@
+{
+  "id": "instagram-DcILfhlgsmu",
+  "url": "https://www.instagram.com/reel/DcILfhlgsmu/",
+  "platform": "Instagram",
+  "platformId": "DcILfhlgsmu",
+  "title": "What if you fill out wrong answers to life?",
+  "creator": "@elsaqinn",
+  "summary": "위협적인 선택 게임에서 시작해 빨간 컵 아래의 동전과 오리 장난감을 고르는 장면으로 전환하며, 정답보다 선택 자체를 돌아보게 하는 짧은 영상.",
+  "description": "처음에는 인물의 머리에 총이 겨눠진 클로즈업과 빨간 컵 세 개를 교차해 선택의 긴장을 만든다. 컵 아래의 동전과 노란 오리 장난감을 차례로 드러낸 뒤, 실내의 게임을 야외 놀이터로 옮겨 같은 컵·물건 구도를 반복한다. 끝에는 나뭇잎·오리·동전을 한 화면에 놓고 'IS NO WRONG ANSWER / JUST.. / CHOICES.'라는 문구로 마무리한다. 위협적인 도입과 일상적인 소품, 실내·실외 전환, 클로즈업과 넓은 숏의 대비가 연출 참고점이다.",
+  "categories": ["direction", "editing", "camera"],
+  "tags": ["숏폼"],
+  "durationSeconds": 42,
+  "addedAt": "2026-09-28T00:01:32+09:00",
+  "thumbnail": "media/instagram-DcILfhlgsmu/scene-6.webp",
+  "scenes": [
+    {"seconds": 0, "image": "media/instagram-DcILfhlgsmu/scene-1.webp", "description": "실내 테이블 앞 인물의 머리 옆에 권총 형태의 소품이 겨눠진 도입."},
+    {"seconds": 6, "image": "media/instagram-DcILfhlgsmu/scene-2.webp", "description": "어두운 테이블 위 빨간 컵 세 개와 손을 가까이서 보여주는 장면."},
+    {"seconds": 16, "image": "media/instagram-DcILfhlgsmu/scene-3.webp", "description": "컵을 들어 드러난 동전의 클로즈업."},
+    {"seconds": 24, "image": "media/instagram-DcILfhlgsmu/scene-4.webp", "description": "실내에서 컵을 들어 올리자 작은 노란 오리 장난감이 나타나는 장면."},
+    {"seconds": 30, "image": "media/instagram-DcILfhlgsmu/scene-5.webp", "description": "야외 놀이터에서 검은 상자와 빨간 컵, 노란 오리 장난감 앞에 앉은 인물."},
+    {"seconds": 40, "image": "media/instagram-DcILfhlgsmu/scene-6.webp", "description": "나뭇잎·노란 오리·동전을 늘어놓은 마무리 화면에 'CHOICES.' 자막이 보인다."}
+  ],
+  "sourceNote": "2026-09-28에 공개 Instagram 페이지에서 게시 계정 @elsaqinn과 설명을 확인하고 yt-dlp로 42.23초 원본을 확보했다. 전 구간을 2초 간격으로 확인하고 대표 장면 6개를 원본 프레임에서 캡처했다. 게시자는 원작자 @peachrinq의 'choices' 영상에서 영감을 받아 허락을 얻어 리믹스했다고 설명한다.",
+  "caution": "음성 전문은 별도로 전사·검수하지 않아 transcript를 싣지 않았다. 결말의 화면 자막은 표본 프레임에서 확인한 구간만 인용했다. 권총의 실제 여부는 확인하지 않았으며 영상 속 소품으로 묘사했다."
+}
