@@ -68,8 +68,8 @@ test('모든 HTML noindex 및 원본 링크, 누락된 대본 숨김', async () 
   }
   assert.match(await readFile('dist/videos/youtube-tRJIF5UHUm0.html','utf8'),/youtube-nocookie.com\/embed\/tRJIF5UHUm0/);
 });
-test('세 샘플 모두 실제 캡처 네 장과 썸네일 포함', async () => {
-  for (const file of ['cats.json','higgsfield.json','steelcut.json']) {
+test('남은 초기 샘플 모두 실제 캡처 네 장과 썸네일 포함', async () => {
+  for (const file of ['cats.json','steelcut.json']) {
     const video = JSON.parse(await readFile(`content/videos/${file}`,'utf8'));
     assert.equal(video.scenes.length,4);
     assert.ok(video.scenes.some(s=>s.image === video.thumbnail));
