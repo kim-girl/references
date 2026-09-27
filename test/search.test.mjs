@@ -47,6 +47,17 @@ test('같은 종류 OR, 다른 종류 AND 및 빈 결과', () => {
   assert.equal(search(videos,categories,'',['direction'],['API']).length,0);
   assert.equal(search(videos,categories,'없는검색어').length,0);
 });
+test('주로 볼 점 다섯 개만 필터로 보이고 태그는 검색 데이터에만 남는다', async () => {
+  const html = await readFile('dist/index.html','utf8');
+  const choices = JSON.parse(await readFile('content/categories.json','utf8'));
+  assert.equal(choices.length,5);
+  assert.match(html,/<span>주로 볼 점<\/span>/);
+  assert.doesNotMatch(html,/<span>태그<\/span>|data-filter="tag"|class="tags"/);
+  for (const choice of choices) assert.ok(html.includes(`data-value="${choice.id}"`));
+  assert.ok(html.includes('볼 점 미분류'));
+  const cats = JSON.parse(await readFile('content/videos/cats.json','utf8'));
+  assert.equal(search([cats],choices,'동물').length,1);
+});
 test('모든 HTML noindex 및 원본 링크, 누락된 대본 숨김', async () => {
   const content = await Promise.all((await readdir('content/videos')).filter(f=>f.endsWith('.json')).map(async f=>JSON.parse(await readFile(`content/videos/${f}`,'utf8'))));
   const files = ['dist/index.html',...(await readdir('dist/videos')).map(f=>`dist/videos/${f}`)];

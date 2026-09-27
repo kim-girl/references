@@ -3,7 +3,7 @@
 ## 저장과 검증
 
 - 영상마다 `content/videos/<id>.json` 하나를 관리한다. `id`는 영문·숫자·하이픈·밑줄만 사용하고 한번 정하면 유지한다.
-- 필수: `id`, `url`, `title`, `summary`(짧은 요약), `description`(참고 포인트), `categories`(한 개 이상의 카테고리 ID), `addedAt`(최초 수집 시각, 시간대가 포함된 ISO 8601 형식).
+- 필수: `id`, `url`, `title`, `summary`(짧은 요약), `description`(참고 포인트), `categories`(주로 볼 점의 ID 배열; 확인된 분류가 없으면 빈 배열), `addedAt`(최초 수집 시각, 시간대가 포함된 ISO 8601 형식).
 - `addedAt`은 레퍼런스를 처음 수집한 시각이다. 원본 영상 게시일이나 재분석 날짜와 구분하며, 갱신 시 유지한다. 목록과 상세 페이지에서 한국 시간 기준 수집 날짜를 표시한다. 실제 수집 시각을 기록하고 정렬을 위해 임의 시각을 만들지 않는다.
 - 선택: `platform`, `platformId`, `creator`, `durationSeconds`, `tags`, `thumbnail`, `scenes`, `transcript`, `note`(개인 메모), `sourceNote`(분석 출처), `caution`(불확실성·메타데이터 불일치 등), `embed`.
 - `creator`에는 원본 게시 계정명 또는 채널명을 기록한다. 플랫폼에 관계없이 확보한 경우 목록과 상세 페이지에 표시한다. Instagram은 실제 게시 계정 핸들(`@account`)을 사용한다. 영상 설명에서 언급한 계정이나 영상 속 인물을 게시 계정으로 추측하지 않는다. 확보하지 못하면 생략한다.
