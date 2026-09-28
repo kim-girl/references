@@ -3,3 +3,4 @@
 .collected-date{flex-basis:100%;font-size:12px;color:var(--muted);margin-top:8px}
 .pull-refresh{position:fixed;z-index:20;top:calc(env(safe-area-inset-top,0px) + 12px);left:50%;transform:translate(-50%,-150%);padding:9px 16px;border-radius:999px;background:var(--green);color:var(--ink);font-size:13px;white-space:nowrap;transition:transform .18s ease;pointer-events:none}
 body.is-pulling .pull-refresh{transform:translate(-50%,0)}
+.prose-point{overflow-wrap:anywhere;margin:0 0 1.15em}.prose-point:last-child{margin-bottom:0}.prose-point strong{font-weight:700}

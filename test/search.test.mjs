@@ -82,6 +82,11 @@ test('모든 HTML noindex 및 원본 링크, 누락된 대본 숨김', async () 
   }
   assert.match(await readFile('dist/videos/youtube-tRJIF5UHUm0.html','utf8'),/youtube-nocookie.com\/embed\/tRJIF5UHUm0/);
 });
+test('사운드 레퍼런스의 세 포인트를 굵은 부제목과 별도 문단으로 표시한다', async () => {
+  const html = await readFile('dist/videos/instagram-DcGuZqxpigR.html','utf8');
+  assert.match(html, /<p class="prose-point"><strong>색감<\/strong><br>[^<]+<\/p><p class="prose-point"><strong>색보정 포인트<\/strong><br>[^<]+<\/p><p class="prose-point"><strong>사운드<\/strong><br>[^<]+<\/p>/);
+  assert.doesNotMatch(html, /<strong>실제 악기<\/strong>/);
+});
 test('남은 초기 샘플 모두 실제 캡처 네 장과 썸네일 포함', async () => {
   for (const file of ['cats.json','steelcut.json']) {
     const video = JSON.parse(await readFile(`content/videos/${file}`,'utf8'));
