@@ -1,0 +1,26 @@
+{
+  "id": "instagram-DcGuZqxpigR",
+  "url": "https://www.instagram.com/reel/DcGuZqxpigR/",
+  "platform": "Instagram",
+  "platformId": "DcGuZqxpigR",
+  "title": "말로 다 설명할 수 없는 순간들",
+  "creator": "@kaninobouken",
+  "summary": "꽃·하늘·차창 밖 풍경·그림자·빛 반사를 빠르게 엮어 순간의 감각을 남기는 12초 영상. 사용자에게는 가늘고 날카로우면서도 연약한 현악기 같은 사운드가 특히 인상적이었다.",
+  "description": "색감: 짙은 녹색과 청회색을 바탕으로 흰 꽃과 반짝이는 빛, 잠깐의 살구빛 하늘을 대비시킨다. 전체를 한 톤으로 평평하게 맞추기보다 어두운 컷과 밝은 컷을 번갈아 놓는다. 색보정 참고: 그림자와 중간 밝기를 약간 낮추되 꽃·하늘의 밝은 부분은 살리고, 채도는 조금만 낮춘다. 그림자에는 푸른 기운, 밝은 부분에는 약한 온기를 더하되 컷마다 밝기를 따로 맞춰 명암의 리듬을 유지한다. 사운드 참고: 사용자는 가늘고 날카로우면서도 연약한 현악기 같은 질감을 중요하게 느꼈다. 실제 악기나 음원명은 확인되지 않았으므로 특정 현악기라고 단정하지 않는다.",
+  "categories": ["color", "filming-effects"],
+  "tags": ["숏폼"],
+  "durationSeconds": 12,
+  "addedAt": "2026-09-28T22:21:15+09:00",
+  "thumbnail": "media/instagram-DcGuZqxpigR/scene-1.webp",
+  "scenes": [
+    {"seconds": 1, "image": "media/instagram-DcGuZqxpigR/scene-1.webp", "description": "짙은 배경 위 흰 꽃잎과 노란 꽃술이 돋보이는 장면."},
+    {"seconds": 2, "image": "media/instagram-DcGuZqxpigR/scene-2.webp", "description": "구름과 밝은 태양 앞에 손의 실루엣이 겹친 장면."},
+    {"seconds": 3, "image": "media/instagram-DcGuZqxpigR/scene-3.webp", "description": "옅은 살구빛 구름과 푸른 하늘 아래 들판과 물이 보이는 장면."},
+    {"seconds": 4, "image": "media/instagram-DcGuZqxpigR/scene-4.webp", "description": "어두운 차창 안쪽에서 푸른 숲과 길을 바라보는 장면."},
+    {"seconds": 6, "image": "media/instagram-DcGuZqxpigR/scene-6.webp", "description": "강한 햇빛을 받은 녹색 나무와 밝은 길가의 장면."},
+    {"seconds": 8, "image": "media/instagram-DcGuZqxpigR/scene-8.webp", "description": "어두운 회색 바탕에서 작은 빛들이 흰 점으로 반짝이는 장면."},
+    {"seconds": 11, "image": "media/instagram-DcGuZqxpigR/scene-11.webp", "description": "짙은 푸른 황혼 하늘 아래 손을 든 인물의 검은 실루엣."}
+  ],
+  "sourceNote": "2026-09-28에 공개 Instagram 릴의 게시 계정 @kaninobouken과 설명을 확인하고 yt-dlp로 약 12초 원본을 확보했다. 전 구간의 1초 간격 프레임을 살펴 실제 화면에서 7장을 캡처했다. 일본어 게시 설명은 언어로 표현할 수 없는 충동적인 끌림을 믿고 모험을 계속하고 싶다는 취지다. 색보정 항목은 영상에서 확인한 색감에 기반한 재현 제안이지 원작자의 실제 작업 설정이 아니다.",
+  "caution": "사운드의 '가늘고 날카롭지만 연약한 현악기 같은' 질감은 사용자의 감상이다. 음원을 직접 청취해 악기·곡명·장면별 싱크를 검증하지 못했다. 음성 대본 역시 검수하지 않아 싣지 않았다."
+}
