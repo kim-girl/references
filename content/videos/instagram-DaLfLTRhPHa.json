@@ -1,0 +1,26 @@
+{
+  "id": "instagram-DaLfLTRhPHa",
+  "url": "https://www.instagram.com/reel/DaLfLTRhPHa/",
+  "platform": "Instagram",
+  "platformId": "DaLfLTRhPHa",
+  "title": "A Vision that Follows",
+  "creator": "@nina.nayko",
+  "summary": "도시의 건물·거리·교통시설을 따라 강렬한 빨간 원과 빛이 반복되는 세로 영상.",
+  "description": "회청색 도시 풍경 위 빨간 원이 건물 뒤로 걸리고, 시계 테두리·횡단보도·표지판·신호등·건물 창문에 빨강이 이어진다. 인물과 아파트 장면을 거쳐 밤의 도로에는 길게 뻗은 빨간 빛줄기가 나타나며, 후반부 엘리베이터 숫자 표시와 검은 배경의 제목으로 끝난다. 제한된 색 팔레트, 원형 모티프의 반복, 주야 전환과 도시 사물에 색을 연결하는 효과가 참고점이다.",
+  "categories": ["color", "filming-effects", "planning-ideas"],
+  "tags": ["숏폼"],
+  "durationSeconds": 77,
+  "addedAt": "2026-09-28T17:39:19+09:00",
+  "thumbnail": "media/instagram-DaLfLTRhPHa/scene-20.webp",
+  "scenes": [
+    {"seconds": 0, "image": "media/instagram-DaLfLTRhPHa/scene-0.webp", "description": "건물 뒤에 빨간 원이 걸린 회청색 도시 전경."},
+    {"seconds": 10, "image": "media/instagram-DaLfLTRhPHa/scene-10.webp", "description": "어두운 도로 위 빨갛게 강조된 횡단보도 줄무늬."},
+    {"seconds": 20, "image": "media/instagram-DaLfLTRhPHa/scene-20.webp", "description": "신호등과 건물 뒤에 크게 자리한 빨간 원."},
+    {"seconds": 30, "image": "media/instagram-DaLfLTRhPHa/scene-30.webp", "description": "아파트 앞 인물과 곳곳에 빨갛게 빛나는 창문."},
+    {"seconds": 45, "image": "media/instagram-DaLfLTRhPHa/scene-45.webp", "description": "밤의 도로를 내려다본 구도에 길게 이어지는 빨간 빛줄기."},
+    {"seconds": 60, "image": "media/instagram-DaLfLTRhPHa/scene-60.webp", "description": "어두운 아파트 건물 뒤 빨간 원과 붉은 창문들."},
+    {"seconds": 70, "image": "media/instagram-DaLfLTRhPHa/scene-70.webp", "description": "엘리베이터의 빨간 숫자 표시와 위쪽 화살표."}
+  ],
+  "sourceNote": "2026-09-28에 Instagram 공개 릴의 yt-dlp 메타데이터에서 게시 계정 @nina.nayko와 설명 'A Vision that Follows'를 확인하고 76.63초 영상을 내려받았다. 5초 간격으로 전 구간의 표본 프레임을 확인하고 원본에서 대표 장면 7장을 추출했다.",
+  "caution": "영상의 음악·음성은 별도 전사·검수하지 않아 대본을 싣지 않았다. 빨간 원·빛의 구체적 제작 기법은 확인하지 않았고 화면에 나타난 시각 효과만 기술했다."
+}
