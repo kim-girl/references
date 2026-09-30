@@ -1,0 +1,32 @@
+{
+  "id": "instagram-DdbKfmBJNh6",
+  "url": "https://www.instagram.com/reel/DdbKfmBJNh6/",
+  "platform": "Instagram",
+  "platformId": "DdbKfmBJNh6",
+  "creator": "@seono_official",
+  "title": "기록 009 — 지각변동 (Record 009 — Structural Shift)",
+  "summary": "뒤틀린 학교에서 학생들이 이불을 묶어 탈출하려 하지만, 보건실 커튼 뒤의 괴물이 나타나 탈출을 위협하는 공포 영상.",
+  "description": "연출: 기울어진 복도와 거친 핸드헬드 화면으로 공간이 불안정하다는 느낌을 만든다. 커튼 아래 늘어진 손을 먼저 보여주고 얼굴을 뒤늦게 공개해 정체를 기다리는 긴장을 쌓는다. 탈출 장치: 이불을 묶은 줄은 탈출의 희망이지만, 외벽에 매달린 학생과 줄을 자르는 가위를 교차해 위험을 집중시킨다. 색감: 플래시처럼 강한 정면광, 푸른 커튼, 누런 벽과 붉은 괴물 얼굴의 대비가 거칠고 현장 기록 같은 질감을 만든다. 게시 설명은 이를 학교 내부의 지각변동과 괴물 탈출에 관한 사건 기록 형식으로 소개한다.",
+  "descriptionSections": [
+    {"heading": "연출", "text": "기울어진 복도와 흔들리는 화면으로 공간의 불안정을 전달한다. 커튼 아래 손을 먼저 보여주고 괴물 얼굴을 뒤늦게 공개해 기다림과 갑작스러운 충격을 대비시킨다."},
+    {"heading": "탈출 장치", "text": "학생들이 이불을 묶어 외벽을 내려가는 상황을 만든 뒤, 매달린 인물과 줄을 자르는 가위를 교차한다. 탈출 수단 자체가 위협받으면서 긴장이 커진다. (연출 해석)"},
+    {"heading": "화면 질감", "text": "강한 정면광과 푸른 커튼·누런 벽·붉은 괴물 얼굴의 대비가 거친 현장 기록 같은 인상을 준다."}
+  ],
+  "categories": ["storytelling", "filming-effects"],
+  "tags": ["숏폼"],
+  "durationSeconds": 82,
+  "addedAt": "2026-10-01T00:28:37+09:00",
+  "thumbnail": "media/instagram-DdbKfmBJNh6/scene-15.webp",
+  "scenes": [
+    {"seconds": 5, "image": "media/instagram-DdbKfmBJNh6/scene-5.webp", "description": "푸른 보건실 커튼 앞에 선 교복 차림 학생."},
+    {"seconds": 15, "image": "media/instagram-DdbKfmBJNh6/scene-15.webp", "description": "기울어진 구도로 보이는 뒤틀린 학교 내부."},
+    {"seconds": 25, "image": "media/instagram-DdbKfmBJNh6/scene-25.webp", "description": "학생들이 이불을 모아 탈출을 준비하는 장면."},
+    {"seconds": 40, "image": "media/instagram-DdbKfmBJNh6/scene-40.webp", "description": "커튼 아래에 축 늘어진 손의 클로즈업."},
+    {"seconds": 50, "image": "media/instagram-DdbKfmBJNh6/scene-50.webp", "description": "검은 눈과 붉게 벌어진 입을 가진 괴물 얼굴이 공개되는 장면."},
+    {"seconds": 55, "image": "media/instagram-DdbKfmBJNh6/scene-55.webp", "description": "학생이 이불로 만든 줄을 붙잡고 외벽에 매달린 장면."},
+    {"seconds": 70, "image": "media/instagram-DdbKfmBJNh6/scene-70.webp", "description": "가위가 매듭지은 천으로 향하는 클로즈업."},
+    {"seconds": 80, "image": "media/instagram-DdbKfmBJNh6/scene-80.webp", "description": "바닥의 이불 위에 엎드린 학생들이 보이는 장면."}
+  ],
+  "sourceNote": "공개 Instagram 메타데이터에서 게시 계정 @seono_official과 게시 설명의 제목 '[기록_009_지각변동] / [Record_009_Structural_Shift]'를 확인했다. 확보한 약 81.92초 원본을 5초 간격으로 전 구간 살펴보고 실제 프레임 8장을 추출했다. 줄거리와 연출은 확인한 화면에 기반해 작성했다.",
+  "caution": "괴물 얼굴과 학생 추락·사망을 암시하는 공포 장면이 포함되어 있다. 게시 설명의 사건·사망 기록은 작품 내 설정이며 실제 사건으로 취급하지 않는다."
+}
