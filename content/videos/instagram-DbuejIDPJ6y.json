@@ -1,0 +1,28 @@
+{
+  "id": "instagram-DbuejIDPJ6y",
+  "url": "https://www.instagram.com/reel/DbuejIDPJ6y/",
+  "platform": "Instagram",
+  "platformId": "DbuejIDPJ6y",
+  "creator": "@leeharu0708",
+  "title": "서울은 여전히 서울이고, 나는 여전히 나야",
+  "summary": "젖은 산책로와 흐릿한 도심 불빛, 벤치와 가로등을 이어 붙여 밤의 서울과 개인적인 감정을 겹치는 짧은 영상.",
+  "description": "연출: 젖은 길의 반사광, 흔들려 번지는 도심 불빛, 비어 있는 벤치와 가로등을 차례로 보여준다. 인물 대신 사람이 지나간 공간을 담아 외로움과 회상의 여지를 남긴다. 색감: 깊은 검정을 바탕으로 주황·빨강 가로등과 파랑·보라 불빛을 대비시킨다. 흐림과 색 번짐이 또렷한 기록보다 기억 속 풍경 같은 인상을 준다. 문구: 게시 설명의 '서울은 여전히 서울이고 / 나는 여전히 나야 / 너도.. 여전히 너야?'는 변하지 않는 도시와 상대에 대한 질문을 연결한다.",
+  "descriptionSections": [
+    {"heading": "연출", "text": "젖은 길의 반사광, 흔들려 번지는 도심 불빛, 비어 있는 벤치와 가로등을 이어 보여준다. 인물 대신 사람이 지나간 공간을 담아 외로움과 회상의 여지를 남긴다. (연출 해석)"},
+    {"heading": "색감", "text": "깊은 검정 위 주황·빨강 가로등과 파랑·보라 불빛을 대비시킨다. 흐림과 색 번짐이 기억 속 밤 풍경 같은 인상을 준다."},
+    {"heading": "문구", "text": "게시 설명: ‘서울은 여전히 서울이고 / 나는 여전히 나야 / 너도.. 여전히 너야?’ 변하지 않는 도시와 상대에 대한 질문을 연결한다."}
+  ],
+  "categories": ["color", "storytelling"],
+  "tags": ["숏폼"],
+  "durationSeconds": 15,
+  "addedAt": "2026-10-01T00:23:14+09:00",
+  "thumbnail": "media/instagram-DbuejIDPJ6y/scene-8.webp",
+  "scenes": [
+    {"seconds": 0, "image": "media/instagram-DbuejIDPJ6y/scene-0.webp", "description": "가로등 아래 젖은 산책로와 녹색 나무, 바닥에 비친 빛."},
+    {"seconds": 2, "image": "media/instagram-DbuejIDPJ6y/scene-2.webp", "description": "주황·빨강 불빛이 흐릿하게 번진 밤의 도로."},
+    {"seconds": 4, "image": "media/instagram-DbuejIDPJ6y/scene-4.webp", "description": "파란 불빛과 따뜻한 주황빛이 겹친 흔들리는 거리 풍경."},
+    {"seconds": 8, "image": "media/instagram-DbuejIDPJ6y/scene-8.webp", "description": "벤치가 놓인 산책로와 밝은 가로등, 주황색으로 빛나는 나무."},
+    {"seconds": 12, "image": "media/instagram-DbuejIDPJ6y/scene-12.webp", "description": "파랑·보라 하늘 앞 나무 실루엣과 주황색 가로등."}
+  ],
+  "sourceNote": "공개 Instagram 메타데이터에서 게시 계정 @leeharu0708과 한국어 게시 설명을 확인했다. 약 15.43초 원본을 확보해 전 구간을 1초 간격 프레임으로 살펴보고 실제 대표 장면 5장을 추출했다. 문구는 게시 설명에서 인용했으며 음성 대본으로 취급하지 않았다. 제목은 게시 설명을 바탕으로 정했다."
+}
