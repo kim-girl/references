@@ -24,5 +24,6 @@
     {"seconds": 8, "image": "media/instagram-DbuejIDPJ6y/scene-8.webp", "description": "벤치가 놓인 산책로와 밝은 가로등, 주황색으로 빛나는 나무."},
     {"seconds": 12, "image": "media/instagram-DbuejIDPJ6y/scene-12.webp", "description": "파랑·보라 하늘 앞 나무 실루엣과 주황색 가로등."}
   ],
-  "sourceNote": "공개 Instagram 메타데이터에서 게시 계정 @leeharu0708과 한국어 게시 설명을 확인했다. 약 15.43초 원본을 확보해 전 구간을 1초 간격 프레임으로 살펴보고 실제 대표 장면 5장을 추출했다. 문구는 게시 설명에서 인용했으며 음성 대본으로 취급하지 않았다. 제목은 게시 설명을 바탕으로 정했다."
+  "sourceNote": "공개 Instagram 메타데이터에서 게시 계정 @leeharu0708과 한국어 게시 설명을 확인했다. 약 15.43초 원본을 확보해 전 구간을 1초 간격 프레임으로 살펴보고 실제 대표 장면 5장을 추출했다. 문구는 게시 설명에서 인용했으며 음성 대본으로 취급하지 않았다. 제목은 게시 설명을 바탕으로 정했다.",
+  "descriptionModel": "GPT-6.1 Sol"
 }

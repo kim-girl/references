@@ -22,6 +22,7 @@ test('빌드는 HTML을 삽입하는 영상 길이와 상속된 카테고리를 
     for (const [change,message] of [
       [{durationSeconds:'<img src=x onerror=alert(1)>'},/invalid duration/],
       [{categories:['toString']},/invalid categories/],
+      [{descriptionModel: 123},/invalid descriptionModel/],
     ]) {
       await writeFile(path,JSON.stringify({...original,...change}));
       await assert.rejects(promisify(execFile)(process.execPath,['scripts/build.mjs'],{cwd:dir}),message);
@@ -86,6 +87,18 @@ test('사운드 레퍼런스의 세 포인트를 굵은 부제목과 별도 문�
   const html = await readFile('dist/videos/instagram-DcGuZqxpigR.html','utf8');
   assert.match(html, /<p class="prose-point"><strong>색감<\/strong><br>[^<]+<\/p><p class="prose-point"><strong>색보정 포인트<\/strong><br>[^<]+<\/p><p class="prose-point"><strong>사운드<\/strong><br>[^<]+<\/p>/);
   assert.doesNotMatch(html, /<strong>실제 악기<\/strong>/);
+});
+test('설명 작성 모델이 있는 영상만 상세 페이지 맨 아래에 작게 표시한다', async () => {
+  for (const file of await readdir('content/videos')) {
+    if (!file.endsWith('.json')) continue;
+    const video = JSON.parse(await readFile(`content/videos/${file}`,'utf8'));
+    const html = await readFile(`dist/videos/${video.id}.html`,'utf8');
+    if (video.descriptionModel) {
+      assert.ok(html.includes(`<p class="model-note">설명 작성 모델 · ${video.descriptionModel}</p></article>`));
+    } else {
+      assert.doesNotMatch(html,/class="model-note"/);
+    }
+  }
 });
 test('남은 초기 샘플 모두 실제 캡처 네 장과 썸네일 포함', async () => {
   for (const file of ['cats.json','steelcut.json']) {

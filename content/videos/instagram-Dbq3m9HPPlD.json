@@ -15,5 +15,6 @@
   "scenes": [
     {"seconds": 0.5, "image": "media/instagram-Dbq3m9HPPlD/scene-1.webp", "description": "분홍·보라·청록빛 아래 카세트 플레이어와 ‘80's Greatest Mix Tape’ 라벨이 붙은 테이프의 클로즈업."}
   ],
-  "sourceNote": "Instagram 원본 게시물 설명과 게시 계정 메타데이터를 확인하고 25.01초 영상을 확보했다. 전 구간을 2초 간격으로 살펴보았으며, 구도가 거의 바뀌지 않아 0.5초의 실제 프레임 한 장만 남겼다. 제목은 원본의 별도 제목이 아닌 편집상 제목이다."
+  "sourceNote": "Instagram 원본 게시물 설명과 게시 계정 메타데이터를 확인하고 25.01초 영상을 확보했다. 전 구간을 2초 간격으로 살펴보았으며, 구도가 거의 바뀌지 않아 0.5초의 실제 프레임 한 장만 남겼다. 제목은 원본의 별도 제목이 아닌 편집상 제목이다.",
+  "descriptionModel": "GPT-6 Sol"
 }

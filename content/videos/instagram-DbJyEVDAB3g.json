@@ -26,5 +26,6 @@
     {"seconds": 7, "image": "media/instagram-DbJyEVDAB3g/scene-7.webp", "description": "노을빛 하늘과 초록 언덕 사이 도로를 달리는 마무리 장면."}
   ],
   "sourceNote": "2026-09-29에 공개 Instagram 릴의 게시 계정 @hellopersonality와 설명('All Terrain All The Time', 트랙 표기 'Personality - Gallop')을 확인하고 yt-dlp로 7.19초 원본을 확보했다. 0.5초 간격으로 전 구간을 확인하고 원본 프레임에서 대표 장면 6장을 캡처했다. 색을 섞는 방법과 효과는 화면에서 읽은 색 조합에 기반한 재현 제안이지 원작자의 실제 색보정 설정이 아니다.",
+  "descriptionModel": "DeepSeek V4.1 Flash",
   "caution": "트랙 표기는 게시 설명에 있는 문구이며 음악을 직접 들어 확인하지는 않았다. 색 조합·효과 항목은 확인된 사실이 아닌 재현 제안이다."
 }

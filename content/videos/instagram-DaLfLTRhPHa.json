@@ -22,5 +22,6 @@
     {"seconds": 70, "image": "media/instagram-DaLfLTRhPHa/scene-70.webp", "description": "엘리베이터의 빨간 숫자 표시와 위쪽 화살표."}
   ],
   "sourceNote": "2026-09-28에 Instagram 공개 릴의 yt-dlp 메타데이터에서 게시 계정 @nina.nayko와 설명 'A Vision that Follows'를 확인하고 76.63초 영상을 내려받았다. 5초 간격으로 전 구간의 표본 프레임을 확인하고 원본에서 대표 장면 7장을 추출했다.",
+  "descriptionModel": "GPT-6 Sol",
   "caution": "영상의 음악·음성은 별도 전사·검수하지 않아 대본을 싣지 않았다. 빨간 원·빛의 구체적 제작 기법은 확인하지 않았고 화면에 나타난 시각 효과만 기술했다."
 }

@@ -20,5 +20,6 @@
     {"seconds": 15, "image": "media/instagram-DcROaBbvCrA/scene-4.webp", "description": "침대와 앉은 인물, 주변 방을 위에서 내려다보는 넓은 구도."}
   ],
   "sourceNote": "2026-09-28 공개 Instagram 페이지에서 게시 계정과 설명을 확인하고 원본 영상(17.69초)을 확보했다. 전 구간을 2초 간격으로 살펴보고 원본 프레임에서 대표 장면 4개를 캡처했다. 게임 애니메이션이라는 제작 맥락은 게시자의 설명에 따른다.",
+  "descriptionModel": "GPT-6 Sol",
   "caution": "음성·음악 및 효과음은 별도로 청취·전사 검수하지 않아 대본을 싣지 않았다."
 }

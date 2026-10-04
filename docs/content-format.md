@@ -5,7 +5,8 @@
 - 영상마다 `content/videos/<id>.json` 하나를 관리한다. `id`는 영문·숫자·하이픈·밑줄만 사용하고 한번 정하면 유지한다.
 - 필수: `id`, `url`, `title`, `summary`(짧은 요약), `description`(참고 포인트), `categories`(주로 볼 점의 ID 배열; 확인된 분류가 없으면 빈 배열), `addedAt`(최초 수집 시각, 시간대가 포함된 ISO 8601 형식).
 - `addedAt`은 레퍼런스를 처음 수집한 시각이다. 원본 영상 게시일이나 재분석 날짜와 구분하며, 갱신 시 유지한다. 목록과 상세 페이지에서 한국 시간 기준 수집 날짜를 표시한다. 실제 수집 시각을 기록하고 정렬을 위해 임의 시각을 만들지 않는다.
-- 선택: `platform`, `platformId`, `creator`, `durationSeconds`, `tags`, `thumbnail`, `scenes`, `transcript`, `note`(개인 메모), `sourceNote`(분석 출처), `caution`(불확실성·메타데이터 불일치 등), `embed`.
+- 선택: `platform`, `platformId`, `creator`, `durationSeconds`, `tags`, `thumbnail`, `scenes`, `transcript`, `note`(개인 메모), `sourceNote`(분석 출처), `descriptionModel`(설명을 작성한 모델), `caution`(불확실성·메타데이터 불일치 등), `embed`.
+- `descriptionModel`은 설명을 실제로 작성한 모델의 표기 이름이다(예: `GPT-6.1 Sol`, `GPT-6 Luna`, `DeepSeek V4.1 Flash`). 상세 페이지 맨 아래에 작게 표시된다. 지휘 모델이 직접 작성했으면 그 모델, 서브에이전트가 작성했으면 서브에이전트 모델, 폴백이 작성했으면 폴백 모델의 이름을 적는다. 확인할 수 없으면 추측하지 않고 생략한다.
 - `descriptionSections`는 선택적인 `{ "heading": "색감", "text": "설명" }` 배열이다. 지정하면 상세 페이지에서 각 항목을 굵은 부제목과 별도 문단으로 표시한다. `description`은 목록 검색용 일반 텍스트로 함께 유지한다. HTML·Markdown을 넣지 않는다.
 - `creator`에는 원본 게시 계정명 또는 채널명을 기록한다. 플랫폼에 관계없이 확보한 경우 목록과 상세 페이지에 표시한다. Instagram은 실제 게시 계정 핸들(`@account`)을 사용한다. 영상 설명에서 언급한 계정이나 영상 속 인물을 게시 계정으로 추측하지 않는다. 확보하지 못하면 생략한다.
 - `scenes`는 `{ "seconds": 12, "image": "media/영상ID/scene-1.webp", "description": "확인한 장면 설명" }` 배열이다. 확보한 정보만 적는다.
