@@ -1,0 +1,69 @@
+{
+  "id": "instagram-DeBxKEuuGSp",
+  "url": "https://www.instagram.com/reel/DeBxKEuuGSp/",
+  "platform": "Instagram",
+  "platformId": "DeBxKEuuGSp",
+  "creator": "@thisiskeepkwan",
+  "title": "전통이 일상이 된 서울 — What if? SEOUL SEOUL SEOUL",
+  "summary": "갓·댕기·한복이 현대 서울의 일상에 자연스럽게 이어진 모습을 낮부터 밤까지 그린 일러스트 영상.",
+  "description": "갓·댕기·한복이 오늘의 서울 일상복으로 이어졌다면 어떨까라는 상상을 일러스트로 펼친다. 도심 전경에서 개울가·한강 산책·밤 골목으로 이동하며 특별한 의상을 평범한 하루의 행동에 자연스럽게 놓는다. 파랑을 하늘·물·옷·밤 골목에 반복하고, 연두색 풀과 분홍 구름·꽃을 함께 배치한다. 낮의 밝은 파랑은 밤의 짙은 남색으로 이어지고 주황 창문과 분홍 불빛이 온기를 남긴다. 날리는 긴 옷끈·흐르는 물·달리는 인물과 도시를 내려다보는 구도 변화로 정적인 그림에 흐름을 준다. 전통 복식과 현대 도시의 결합이 낯설면서도 친근한 풍경을 만든다. (연출 해석)",
+  "descriptionSections": [
+    {
+      "heading": "기획·연출",
+      "text": "갓·댕기·한복이 오늘의 서울 일상복으로 이어졌다면 어떨까라는 상상을 일러스트로 펼친다. 도심 전경에서 개울가·한강 산책·밤 골목으로 이동하며 특별한 의상을 평범한 하루의 행동에 자연스럽게 놓는다."
+    },
+    {
+      "heading": "색감",
+      "text": "파랑을 하늘·물·옷·밤 골목에 반복하고, 연두색 풀과 분홍 구름·꽃을 함께 배치한다. 낮의 밝은 파랑은 밤의 짙은 남색으로 이어지고 주황 창문과 분홍 불빛이 온기를 남긴다."
+    },
+    {
+      "heading": "움직임",
+      "text": "날리는 긴 옷끈·흐르는 물·달리는 인물과 도시를 내려다보는 구도 변화로 정적인 그림에 흐름을 준다. 전통 복식과 현대 도시의 결합이 낯설면서도 친근한 풍경을 만든다. (연출 해석)"
+    }
+  ],
+  "categories": [
+    "person-illustration",
+    "color",
+    "planning-ideas"
+  ],
+  "tags": [
+    "AI 제작",
+    "숏폼"
+  ],
+  "durationSeconds": 34,
+  "addedAt": "2026-10-05T00:31:36+09:00",
+  "thumbnail": "media/instagram-DeBxKEuuGSp/scene-0.webp",
+  "scenes": [
+    {
+      "seconds": 0,
+      "image": "media/instagram-DeBxKEuuGSp/scene-0.webp",
+      "description": "푸른 하늘과 현대 건축물 앞 전통 복식 인물, 분홍 꽃."
+    },
+    {
+      "seconds": 5,
+      "image": "media/instagram-DeBxKEuuGSp/scene-5.webp",
+      "description": "도시 전경 위로 긴 옷끈을 날리는 인물."
+    },
+    {
+      "seconds": 9,
+      "image": "media/instagram-DeBxKEuuGSp/scene-9.webp",
+      "description": "개울가에서 갓을 쓰고 앉아 책을 보는 인물."
+    },
+    {
+      "seconds": 17,
+      "image": "media/instagram-DeBxKEuuGSp/scene-17.webp",
+      "description": "한강변 초록 잔디를 달리는 파란 옷의 두 인물."
+    },
+    {
+      "seconds": 23,
+      "image": "media/instagram-DeBxKEuuGSp/scene-23.webp",
+      "description": "불 켜진 집과 가게 사이 밤 골목을 걷는 두 인물."
+    },
+    {
+      "seconds": 30,
+      "image": "media/instagram-DeBxKEuuGSp/scene-30.webp",
+      "description": "달과 소나무를 앞에 둔 서울 야경."
+    }
+  ],
+  "sourceNote": "게시 계정과 설명은 Instagram 공개 메타데이터에서 확인했다. 약 34.30초 원본을 전 구간 20개 표본 프레임으로 확인하고 대표 장면 6장을 추출했다. AI 협업 제작이라는 표기는 게시자의 설명에 따른다."
+}
