@@ -1,0 +1,73 @@
+{
+  "id": "instagram-DeR7w1qNgNF",
+  "url": "https://www.instagram.com/reel/DeR7w1qNgNF/",
+  "platform": "Instagram",
+  "platformId": "DeR7w1qNgNF",
+  "creator": "@oasis.seo.ai",
+  "title": "내 도넛 내놔!!",
+  "summary": "복고풍 식당에서 도넛을 두고 사람과 거위가 맞붙어 소동이 벌어지는 AI 코미디 영상.",
+  "description": "복고풍 식당에서 여성과 거위가 도넛을 두고 마주한다. 테이블의 작은 신경전이 일어서기·거위의 날갯짓·직원의 개입으로 커지며 정적인 대화 상황을 소동으로 바꾼다. 거위와 사람의 시선 높이를 맞춘 구도가 둘을 대등한 상대처럼 보이게 한다. (연출 해석) 도넛이라는 사소한 물건에 사람과 거위가 진지하게 반응하는 불균형이 웃음을 만든다. 소동 속에서도 식사하는 뒤편 손님을 보여줘 주인공들의 과장된 반응과 대비시킨다. 청록 타일·민트색 직원복·분홍 의자·노란 카운터로 파스텔 복고풍 공간을 만든다. 여성의 진한 자홍색 상의와 거위의 흰 깃털이 배경에서 또렷하게 드러난다.",
+  "descriptionSections": [
+    {
+      "heading": "연출",
+      "text": "복고풍 식당에서 여성과 거위가 도넛을 두고 마주한다. 테이블의 작은 신경전이 일어서기·거위의 날갯짓·직원의 개입으로 커지며 정적인 대화 상황을 소동으로 바꾼다. 거위와 사람의 시선 높이를 맞춘 구도가 둘을 대등한 상대처럼 보이게 한다. (연출 해석)"
+    },
+    {
+      "heading": "코미디 포인트",
+      "text": "도넛이라는 사소한 물건에 사람과 거위가 진지하게 반응하는 불균형이 웃음을 만든다. 소동 속에서도 식사하는 뒤편 손님을 보여줘 주인공들의 과장된 반응과 대비시킨다."
+    },
+    {
+      "heading": "색감·공간",
+      "text": "청록 타일·민트색 직원복·분홍 의자·노란 카운터로 파스텔 복고풍 공간을 만든다. 여성의 진한 자홍색 상의와 거위의 흰 깃털이 배경에서 또렷하게 드러난다."
+    }
+  ],
+  "descriptionModel": "gpt-6.1-sol",
+  "categories": [
+    "storytelling",
+    "color",
+    "realistic-surreal"
+  ],
+  "tags": [
+    "동물",
+    "AI 제작",
+    "숏폼",
+    "코미디"
+  ],
+  "durationSeconds": 29,
+  "addedAt": "2026-10-10T20:36:11+09:00",
+  "thumbnail": "media/instagram-DeR7w1qNgNF/scene-0.webp",
+  "scenes": [
+    {
+      "seconds": 0,
+      "image": "media/instagram-DeR7w1qNgNF/scene-0.webp",
+      "description": "식당 테이블에서 도넛을 든 여성과 흰 거위가 마주한 도입."
+    },
+    {
+      "seconds": 9,
+      "image": "media/instagram-DeR7w1qNgNF/scene-9.webp",
+      "description": "여성과 거위의 거리와 식당 전체가 드러난 넓은 구도."
+    },
+    {
+      "seconds": 11,
+      "image": "media/instagram-DeR7w1qNgNF/scene-11.webp",
+      "description": "여성이 테이블에서 일어나는 장면."
+    },
+    {
+      "seconds": 16,
+      "image": "media/instagram-DeR7w1qNgNF/scene-16.webp",
+      "description": "카운터 앞에서 거위가 날개를 크게 펼치는 장면."
+    },
+    {
+      "seconds": 20,
+      "image": "media/instagram-DeR7w1qNgNF/scene-20.webp",
+      "description": "소동과 대비되는 뒤편 손님의 식사 장면."
+    },
+    {
+      "seconds": 24,
+      "image": "media/instagram-DeR7w1qNgNF/scene-24.webp",
+      "description": "거위 앞에 선 여성과 민트색 유니폼의 직원."
+    }
+  ],
+  "sourceNote": "게시 계정과 제목 및 AI 제작 표기는 공개 Instagram 메타데이터에서 확인했다. 약 29.14초 원본을 전 구간 16개 표본 프레임으로 살펴보고 실제 대표 장면 6장을 추출했다.",
+  "caution": "게시자는 상업적 용도·변형·스타일 카피 금지를 명시했다. 참고 열람과 별개로 원본을 재사용하거나 변형하려면 게시자의 이용 조건을 확인해야 한다."
+}
