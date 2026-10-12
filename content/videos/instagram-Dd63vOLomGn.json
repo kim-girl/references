@@ -1,0 +1,68 @@
+{
+  "id": "instagram-Dd63vOLomGn",
+  "url": "https://www.instagram.com/reel/Dd63vOLomGn/",
+  "platform": "Instagram",
+  "platformId": "Dd63vOLomGn",
+  "creator": "@emil.nyv",
+  "title": "매트릭스 테마 — Matrix theme…",
+  "summary": "밤의 아파트 건물에서 창문들이 파랑과 빨강으로 하나씩 켜지고, 진행될수록 붉은 창문이 늘어나는 30초 영상.",
+  "description": "어두운 아파트 외벽을 천천히 바라보며 창문이 하나씩 켜진다. 각 창문은 파랑 또는 빨강으로 빛나고 그 안에 사람의 실루엣이 움직여, 같은 빌딩에 사는 사람들이 각자 다른 선택을 하는 모습처럼 보인다. 처음부터 일관되게 붉은 피아노 창문이 화면의 기준점이 되고, 다른 창문들은 파랗게 켜졌다가 점점 붉게 바뀐다. (연출 해석) 거의 검은 밤을 배경으로 빨강과 파랑 두 색만 강하게 쓴다. 붉은 방에서는 커튼·스탠드·그랜드피아노가 실루엣으로 드러나고, 창문 빛이 벽을 살짝 비춘다. 왼쪽 멀리 다른 건물의 작은 주황 불빛들이 어둠의 깊이를 만든다. 게시 설명의 Matrix 테마에 맞춰 빨강·파랑 창문을 레드 필과 블루 필에 빗댄 구성으로 읽힌다. 진행될수록 파란 창문이 붉게 바뀌는 변화가 ‘선택’의 서사를 만든다. (연출 해석)",
+  "descriptionSections": [
+    {
+      "heading": "연출",
+      "text": "어두운 아파트 외벽을 천천히 바라보며 창문이 하나씩 켜진다. 각 창문은 파랑 또는 빨강으로 빛나고 그 안에 사람의 실루엣이 움직여, 같은 빌딩에 사는 사람들이 각자 다른 선택을 하는 모습처럼 보인다. 처음부터 일관되게 붉은 피아노 창문이 화면의 기준점이 되고, 다른 창문들은 파랗게 켜졌다가 점점 붉게 바뀐다. (연출 해석)"
+    },
+    {
+      "heading": "색감",
+      "text": "거의 검은 밤을 배경으로 빨강과 파랑 두 색만 강하게 쓴다. 붉은 방에서는 커튼·스탠드·그랜드피아노가 실루엣으로 드러나고, 창문 빛이 벽을 살짝 비춘다. 왼쪽 멀리 다른 건물의 작은 주황 불빛들이 어둠의 깊이를 만든다."
+    },
+    {
+      "heading": "주제",
+      "text": "게시 설명의 Matrix 테마에 맞춰 빨강·파랑 창문을 레드 필과 블루 필에 빗댄 구성으로 읽힌다. 진행될수록 파란 창문이 붉게 바뀌는 변화가 ‘선택’의 서사를 만든다. (연출 해석)"
+    }
+  ],
+  "descriptionModel": "deepseek/deepseek-flash-latest (OpenRouter 폴백)",
+  "categories": [
+    "color",
+    "planning-ideas"
+  ],
+  "tags": [
+    "숏폼"
+  ],
+  "durationSeconds": 30,
+  "addedAt": "2026-10-13T01:34:42+09:00",
+  "thumbnail": "media/instagram-Dd63vOLomGn/scene-2.webp",
+  "scenes": [
+    {
+      "seconds": 2,
+      "image": "media/instagram-Dd63vOLomGn/scene-2.webp",
+      "description": "붉게 빛나는 창문 안, 그랜드피아노 앞에 앉은 연주자의 실루엣을 가까이서 보여주는 도입."
+    },
+    {
+      "seconds": 10,
+      "image": "media/instagram-Dd63vOLomGn/scene-10.webp",
+      "description": "왼쪽 창문에 서 있는 남자의 파란 실루엣이 나타나고 오른쪽 붉은 피아노 창문이 함께 보이는 장면."
+    },
+    {
+      "seconds": 13,
+      "image": "media/instagram-Dd63vOLomGn/scene-13.webp",
+      "description": "여러 층의 파란 창문이 켜지고 붉은 피아노 창문이 가운데 자리한 구도."
+    },
+    {
+      "seconds": 19,
+      "image": "media/instagram-Dd63vOLomGn/scene-19.webp",
+      "description": "긴 머리 여성의 파란 창문과 서 있는 남자 실루엣, 아래층 파란 창문이 함께 보이는 장면."
+    },
+    {
+      "seconds": 25,
+      "image": "media/instagram-Dd63vOLomGn/scene-25.webp",
+      "description": "위층과 가운데 창문이 붉게 바뀌고 아래 창문만 파랗게 남은 장면."
+    },
+    {
+      "seconds": 29,
+      "image": "media/instagram-Dd63vOLomGn/scene-29.webp",
+      "description": "세로로 이어진 세 창문이 모두 붉게 켜진 마무리 — 피아노 연주자, 여성, 서 있는 사람의 실루엣."
+    }
+  ],
+  "sourceNote": "게시 계정과 설명(‘Matrix theme…’, #matrix)은 Instagram 공개 메타데이터에서 확인했다. 약 30.58초 원본을 전 구간 16개 표본 프레임과 확대 크롭으로 검수하고 대표 장면 6장을 추출했다. 레드 필·블루 필 해석은 화면 관찰에 기반한 연출 해석이다."
+}
