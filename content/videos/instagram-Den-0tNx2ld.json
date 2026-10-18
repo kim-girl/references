@@ -1,0 +1,82 @@
+{
+  "id": "instagram-Den-0tNx2ld",
+  "url": "https://www.instagram.com/reel/Den-0tNx2ld/",
+  "platform": "Instagram",
+  "platformId": "Den-0tNx2ld",
+  "creator": "@project_sh",
+  "title": "딸깍이 편하긴 하지 — MOBIFOLD 폴더블 마우스 광고",
+  "summary": "폴더블 마우스를 매개로 상상이 이어지다가 ‘노력을 해라’로 반전하는 31초 광고 영상.",
+  "description": "카페에서 작업하던 남자의 상상이 폴더블 마우스를 매개로 이어진다. 마우스를 접었다 펴고, 편집 화면 속 도넛을 키우고, 알고 싶은 것을 열어보는 등 클릭과 상상이 섞인다. 마지막에는 ‘딸깍’ 한 번으로 되길 바라는 장면 뒤에 책상에 엎드린 남자 위로 ‘노력을 해라’가 뜬다. 게시 설명의 ‘딸깍이 편하긴 하지’와 ‘노력을 해라’의 대비가 웃음 포인트다. (연출 해석 포함) ‘접었다가’, ‘마우스까지 나와서’, ‘이왕 좋아진 김에’, ‘더 좋아져서…’, ‘좋은 건 키우고’, ‘알고 싶은 마음은 열어보고’, ‘손에 익숙한 느낌 그대로’, ‘딸깍’, ‘딸깍 한 번으로 되길 바라는 건…’, ‘야 이직이냐?’, ‘노력을 해라’. 일부 구간의 자막은 판독이 어려워 확인된 문구만 적었다. 실사 화면 위에 마우스 커서를 합성해 실제 공간을 가리키게 하고, 편집기 UI 속에서 소품을 조작하는 상상 장면을 섞는다. 파스텔 민트·베이지 톤 배경에 파란 마우스가 포인트 색으로 쓰인다. (연출 해석)",
+  "descriptionSections": [
+    {
+      "heading": "광고 콘셉트",
+      "text": "카페에서 작업하던 남자의 상상이 폴더블 마우스를 매개로 이어진다. 마우스를 접었다 펴고, 편집 화면 속 도넛을 키우고, 알고 싶은 것을 열어보는 등 클릭과 상상이 섞인다. 마지막에는 ‘딸깍’ 한 번으로 되길 바라는 장면 뒤에 책상에 엎드린 남자 위로 ‘노력을 해라’가 뜬다. 게시 설명의 ‘딸깍이 편하긴 하지’와 ‘노력을 해라’의 대비가 웃음 포인트다. (연출 해석 포함)"
+    },
+    {
+      "heading": "확인한 자막",
+      "text": "‘접었다가’, ‘마우스까지 나와서’, ‘이왕 좋아진 김에’, ‘더 좋아져서…’, ‘좋은 건 키우고’, ‘알고 싶은 마음은 열어보고’, ‘손에 익숙한 느낌 그대로’, ‘딸깍’, ‘딸깍 한 번으로 되길 바라는 건…’, ‘야 이직이냐?’, ‘노력을 해라’. 일부 구간의 자막은 판독이 어려워 확인된 문구만 적었다."
+    },
+    {
+      "heading": "화면·효과",
+      "text": "실사 화면 위에 마우스 커서를 합성해 실제 공간을 가리키게 하고, 편집기 UI 속에서 소품을 조작하는 상상 장면을 섞는다. 파스텔 민트·베이지 톤 배경에 파란 마우스가 포인트 색으로 쓰인다. (연출 해석)"
+    }
+  ],
+  "descriptionModel": "deepseek/deepseek-flash-latest (OpenRouter 폴백)",
+  "categories": [
+    "planning-ideas",
+    "filming-effects",
+    "storytelling"
+  ],
+  "tags": [
+    "광고",
+    "숏폼",
+    "코미디"
+  ],
+  "durationSeconds": 31,
+  "addedAt": "2026-10-19T00:11:24+09:00",
+  "thumbnail": "media/instagram-Den-0tNx2ld/scene-0.5.webp",
+  "scenes": [
+    {
+      "seconds": 0.5,
+      "image": "media/instagram-Den-0tNx2ld/scene-0.5.webp",
+      "description": "카페 창가에서 노트북으로 작업하는 남자의 모습."
+    },
+    {
+      "seconds": 3.91,
+      "image": "media/instagram-Den-0tNx2ld/scene-3.91.webp",
+      "description": "파란 폴더블 마우스를 접는 손 클로즈업. 자막 ‘접었다가’."
+    },
+    {
+      "seconds": 5.87,
+      "image": "media/instagram-Den-0tNx2ld/scene-5.87.webp",
+      "description": "책상 위에 펼쳐진 마우스. 자막 ‘마우스까지 나와서’."
+    },
+    {
+      "seconds": 13.69,
+      "image": "media/instagram-Den-0tNx2ld/scene-13.69.webp",
+      "description": "실제 방 공간 문가에 하얀 마우스 커서가 나타난 합성 장면."
+    },
+    {
+      "seconds": 15.64,
+      "image": "media/instagram-Den-0tNx2ld/scene-15.64.webp",
+      "description": "편집 화면 속 도넛을 마우스로 선택해 키우는 상상 장면. 자막 ‘좋은 건 키우고’."
+    },
+    {
+      "seconds": 17.59,
+      "image": "media/instagram-Den-0tNx2ld/scene-17.59.webp",
+      "description": "‘열기’ 팝업을 마우스로 여는 장면. 자막 ‘알고 싶은 마음은 열어보고’."
+    },
+    {
+      "seconds": 27.37,
+      "image": "media/instagram-Den-0tNx2ld/scene-27.37.webp",
+      "description": "책상에 엎드린 남자와 자막 ‘딸깍 한 번으로 되길 바라는 건…’."
+    },
+    {
+      "seconds": 30.6,
+      "image": "media/instagram-Den-0tNx2ld/scene-30.6.webp",
+      "description": "엎드린 남자 위로 파란 글씨 자막 ‘노력을 해라’."
+    }
+  ],
+  "sourceNote": "게시 계정 @project_sh와 게시 설명(‘#광고 딸깍이 편하긴 하지’, #로지텍 #모비폴드 #폴더블마우스)을 공개 Instagram 메타데이터에서 확인했다. 약 31.28초 원본을 16개 표본 프레임과 확대 크롭으로 검수하고 대표 장면 8장을 추출했다. 자막은 확대 판독으로 확인된 문구만 인용했다.",
+  "caution": "게시자가 #광고로 표시한 광고물이다. 제품명·브랜드는 게시 설명의 해시태그에서 확인했으며 제품 사양이나 광고주와의 관계는 별도로 검증하지 않았다."
+}
