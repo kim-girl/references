@@ -1,0 +1,34 @@
+{
+  "id": "instagram-DfKZK5tOrEe",
+  "url": "https://www.instagram.com/reel/DfKZK5tOrEe/",
+  "platform": "Instagram",
+  "platformId": "DfKZK5tOrEe",
+  "creator": "@decision_movie",
+  "title": "뉴욕의 영국인 — Englishman in New York",
+  "summary": "검은 정장과 모자를 쓴 인물이 우산을 들고 도시를 지나며 낯선 사람들을 돕는 장면을 이어 붙인 애니메이션.",
+  "description": "스토리: 우산을 든 주인공이 도시를 지나며 위험에 처하거나 도움이 필요한 사람들을 만나는 짧은 상황들이 이어진다. 택시 앞의 인물, 길을 묻는 듯 지도를 펼친 사람, 흩어진 물건을 줍는 사람 등 각 만남에서 주인공은 자신의 길을 가다가 잠시 멈춰 타인을 돕는다. 마지막에는 사람들의 시선 속에서 붉은 융단 위를 걷는다. 연출: 검은 정장·모자·긴 우산이라는 일관된 실루엣을 여러 장면에 반복해, 장소와 상대가 바뀌어도 관객이 같은 인물의 행동을 따라가게 한다. 주인공이 우산을 가리키거나 손을 내미는 동작을 통해 친절을 설명보다 행동으로 전달한다. 도시의 높은 건물 사이를 올려다보는 구도와 인물·소품을 가까이 보여주는 구도를 번갈아 사용한다. 결말의 붉은 융단과 주변 사람들의 시선은 앞서 보인 작은 행동들과 대비되며 여운을 남긴다. (연출 해석)",
+  "descriptionSections": [
+    {"heading": "스토리", "text": "우산을 든 주인공이 도시를 지나며 위험에 처하거나 도움이 필요한 사람들을 만나는 짧은 상황들이 이어진다. 택시 앞의 인물, 지도를 펼친 사람, 흩어진 물건을 줍는 사람 등을 마주할 때마다 자신의 길을 가다가 잠시 멈춰 돕는다. 마지막에는 사람들의 시선 속에서 붉은 융단 위를 걷는다."},
+    {"heading": "스토리 연출", "text": "하나의 긴 사건보다 짧은 만남을 차례로 쌓아 주인공의 태도를 보여준다. 우산을 가리키고, 상대에게 다가가고, 손을 내미는 행동을 반복해 ‘작은 친절’이라는 주제를 시각적으로 전달한다. 마지막의 붉은 융단과 주변 사람들의 시선은 앞서 보인 일상적인 행동들과 대비되며 여운을 남긴다. (연출 해석)"},
+    {"heading": "애니메이션 구성", "text": "검은 정장·모자·긴 우산이라는 알아보기 쉬운 실루엣을 장면마다 반복해, 장소와 상대가 바뀌어도 같은 인물을 따라가기 쉽게 한다. 인물과 상대를 함께 담은 거리 구도, 손과 소품에 가까이 다가가는 구도, 높은 빌딩 사이를 올려다보는 구도를 섞어 짧은 행동들과 도시 공간을 연결한다."}
+  ],
+  "descriptionModel": "GPT-6.1 Terra",
+  "categories": ["storytelling", "planning-ideas"],
+  "tags": ["AI 제작", "숏폼"],
+  "durationSeconds": 47,
+  "addedAt": "2026-11-01T11:38:08+09:00",
+  "thumbnail": "media/instagram-DfKZK5tOrEe/scene-0.webp",
+  "scenes": [
+    {"seconds": 0, "image": "media/instagram-DfKZK5tOrEe/scene-0.webp", "description": "검은 정장과 모자를 쓴 인물이 우산을 들고 열린 맨홀 근처를 지나는 도입."},
+    {"seconds": 5, "image": "media/instagram-DfKZK5tOrEe/scene-5.webp", "description": "물가의 벤치 옆에서 우산을 든 인물을 보여주는 장면."},
+    {"seconds": 9, "image": "media/instagram-DfKZK5tOrEe/scene-9.webp", "description": "택시 옆 인물에게 주인공이 다가가는 거리 장면."},
+    {"seconds": 13, "image": "media/instagram-DfKZK5tOrEe/scene-13.webp", "description": "두 인물이 펼친 지도를 사이에 두고 서 있는 장면."},
+    {"seconds": 19, "image": "media/instagram-DfKZK5tOrEe/scene-19.webp", "description": "길 위에 흩어진 물건과 그 앞의 인물에게 주인공이 손을 내미는 장면."},
+    {"seconds": 24, "image": "media/instagram-DfKZK5tOrEe/scene-24.webp", "description": "식당 창가에서 사람들이 움직이고 주인공이 옆에 서 있는 장면."},
+    {"seconds": 29, "image": "media/instagram-DfKZK5tOrEe/scene-29.webp", "description": "높은 도시 건물 사이와 사다리를 올려다보는 구도."},
+    {"seconds": 35, "image": "media/instagram-DfKZK5tOrEe/scene-35.webp", "description": "담장 앞 길을 우산 든 주인공이 지나가는 장면."},
+    {"seconds": 40, "image": "media/instagram-DfKZK5tOrEe/scene-40.webp", "description": "상점 앞에서 다른 사람과 우산을 든 주인공이 마주하는 장면."},
+    {"seconds": 44, "image": "media/instagram-DfKZK5tOrEe/scene-44.webp", "description": "사람들이 지켜보는 가운데 붉은 융단 위에 선 주인공."}
+  ],
+  "sourceNote": "Instagram 공개 게시 설명에서 작품명과 계정명, AI 애니메이션이라는 소개를 확인했다. 약 46.53초 게시본을 전 구간 36개 표본 프레임으로 살피고 대표 장면 10장을 추출했다. 게시자는 캐릭터 디자인과 애니메이션 제작에 AI 도구를 사용했다고 설명하지만, 도구명과 버전은 별도로 검증하지 않았다. 게시 계정의 작품 소개와 원작 제작자의 신원은 구분한다."
+}
