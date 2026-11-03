@@ -1,0 +1,70 @@
+{
+  "id": "instagram-DfJtvWAOtNI",
+  "url": "https://www.instagram.com/reel/DfJtvWAOtNI/",
+  "platform": "Instagram",
+  "platformId": "DfJtvWAOtNI",
+  "creator": "@paulinalouise4",
+  "title": "버블 가득한 상상 — Bubblicious",
+  "summary": "찻잔·거품·패션을 기묘한 인물과 결합한 약 21초의 초현실적 영상.",
+  "description": "버블티를 마시는 장면을 그대로 재현하기보다 찻잔·찻주전자·거품을 인물의 몸과 의상, 거대한 소품에 엮는다. 차가 거품 구슬처럼 찻잔으로 떨어지고, 인물이 머리 위 찻잔에 올라가는 식으로 장면마다 비현실적인 조합을 이어 붙인다. 각진 머리와 긴 팔다리를 가진 인물이 몸을 기울이거나 거품 속에서 움직인다. 노란 옷 인물의 몸 주위에 분홍 고리가 쌓인 뒤 분홍 코트가 나타나는 장면처럼, 의상과 형태가 바뀌며 다음 이미지로 넘어가는 방식이 참고점이다. 배경을 단순한 도형과 패턴으로 두고 인물과 거대한 찻잔·거품을 화면 중앙에 크게 배치한다. 분홍 거품, 붉은 배경, 노란 의상과 청록 소품의 대비가 인물의 기묘한 형태를 또렷하게 보이게 한다. (연출 해석)",
+  "descriptionSections": [
+    {
+      "heading": "기획·연출",
+      "text": "버블티를 마시는 장면을 그대로 재현하기보다 찻잔·찻주전자·거품을 인물의 몸과 의상, 거대한 소품에 엮는다. 차가 거품 구슬처럼 찻잔으로 떨어지고, 인물이 머리 위 찻잔에 올라가는 식으로 장면마다 비현실적인 조합을 이어 붙인다."
+    },
+    {
+      "heading": "움직임과 변형",
+      "text": "각진 머리와 긴 팔다리를 가진 인물이 몸을 기울이거나 거품 속에서 움직인다. 노란 옷 인물의 몸 주위에 분홍 고리가 쌓인 뒤 분홍 코트가 나타나는 장면처럼, 의상과 형태가 바뀌며 다음 이미지로 넘어가는 방식이 참고점이다."
+    },
+    {
+      "heading": "화면 구성",
+      "text": "배경을 단순한 도형과 패턴으로 두고 인물과 거대한 찻잔·거품을 화면 중앙에 크게 배치한다. 분홍 거품, 붉은 배경, 노란 의상과 청록 소품의 대비가 인물의 기묘한 형태를 또렷하게 보이게 한다. (연출 해석)"
+    }
+  ],
+  "descriptionModel": "GPT-6.1 Terra",
+  "categories": [
+    "planning-ideas",
+    "color",
+    "realistic-surreal"
+  ],
+  "tags": [
+    "AI 제작",
+    "숏폼"
+  ],
+  "durationSeconds": 21,
+  "addedAt": "2026-11-03T22:33:07+09:00",
+  "thumbnail": "media/instagram-DfJtvWAOtNI/scene-1.webp",
+  "scenes": [
+    {
+      "seconds": 1,
+      "image": "media/instagram-DfJtvWAOtNI/scene-1.webp",
+      "description": "격자무늬 옷을 입은 인물이 커다란 찻잔을 들고, 위쪽 주전자에서 분홍 구슬이 떨어지는 장면."
+    },
+    {
+      "seconds": 4,
+      "image": "media/instagram-DfJtvWAOtNI/scene-4.webp",
+      "description": "줄무늬 옷과 뾰족한 빨간 신발 차림의 인물 머리 위로 거품이 피어오르는 장면."
+    },
+    {
+      "seconds": 9,
+      "image": "media/instagram-DfJtvWAOtNI/scene-9.webp",
+      "description": "노란 옷을 입은 각진 얼굴의 인물 옆에 거품을 담은 장치가 서 있는 장면."
+    },
+    {
+      "seconds": 12,
+      "image": "media/instagram-DfJtvWAOtNI/scene-12.webp",
+      "description": "분홍색 코트를 입은 인물과 유리 구슬이 든 장치."
+    },
+    {
+      "seconds": 14,
+      "image": "media/instagram-DfJtvWAOtNI/scene-14.webp",
+      "description": "분홍 거품에 둘러싸인 인물이 찻주전자를 들고 있는 장면."
+    },
+    {
+      "seconds": 18,
+      "image": "media/instagram-DfJtvWAOtNI/scene-18.webp",
+      "description": "아래 인물의 머리 위 찻잔과 그 위에서 움직이는 초록 머리 인물."
+    }
+  ],
+  "sourceNote": "Instagram 공개 게시 설명에서 계정명과 버블티·AI 초현실주의라는 소개를 확인했다. 약 20.9초 영상을 전 구간 20개 표본 프레임으로 살펴보고 대표 장면 6장을 추출했다. AI 관련 분류는 게시자의 설명과 해시태그에 따른다."
+}
