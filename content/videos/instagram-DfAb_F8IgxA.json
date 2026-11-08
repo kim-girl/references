@@ -1,0 +1,68 @@
+{
+  "id": "instagram-DfAb_F8IgxA",
+  "url": "https://www.instagram.com/reel/DfAb_F8IgxA/",
+  "platform": "Instagram",
+  "platformId": "DfAb_F8IgxA",
+  "creator": "@renderdilusso",
+  "title": "평면도 안으로 들어간 사람",
+  "summary": "주택 평면도 위의 인물이 현관에서 거실까지 움직이며 공간을 이용하는 모습을 보여주는 영상.",
+  "description": "움직이지 않는 주택 평면도 위에 사람을 실제 크기의 작은 인물처럼 등장시킨다. 현관에서 들어온 인물이 주방과 식탁 쪽을 지나 거실 소파에 앉는 모습을 통해, 도면을 단순한 공간 정보가 아니라 사람이 생활하는 공간처럼 보여준다. 평면도 전체를 정면 위에서 내려다보는 고정 구도를 유지하고 인물만 움직이게 한다. 덕분에 관객은 방 배치를 한눈에 보면서도, 인물이 어디로 이동하고 어떤 공간을 이용하는지 자연스럽게 따라간다. (연출 해석) 부동산 평면도, 매장 배치도, 전시장 안내도에 사람의 동선을 더해 공간의 크기와 사용 방식을 직관적으로 전달하는 아이디어로 응용할 수 있다. 이 영상의 구체적인 합성·제작 방법은 확인되지 않았다. (기획 제안)",
+  "descriptionSections": [
+    {
+      "heading": "핵심 아이디어",
+      "text": "움직이지 않는 주택 평면도 위에 사람을 실제 크기의 작은 인물처럼 등장시킨다. 현관에서 들어온 인물이 주방과 식탁 쪽을 지나 거실 소파에 앉는 모습을 통해, 도면을 단순한 공간 정보가 아니라 사람이 생활하는 공간처럼 보여준다."
+    },
+    {
+      "heading": "보여주는 방식",
+      "text": "평면도 전체를 정면 위에서 내려다보는 고정 구도를 유지하고 인물만 움직이게 한다. 덕분에 관객은 방 배치를 한눈에 보면서도, 인물이 어디로 이동하고 어떤 공간을 이용하는지 자연스럽게 따라간다. (연출 해석)"
+    },
+    {
+      "heading": "응용 포인트",
+      "text": "부동산 평면도, 매장 배치도, 전시장 안내도에 사람의 동선을 더해 공간의 크기와 사용 방식을 직관적으로 전달하는 아이디어로 응용할 수 있다. 이 영상의 구체적인 합성·제작 방법은 확인되지 않았다. (기획 제안)"
+    }
+  ],
+  "descriptionModel": "GPT-6.1 Terra",
+  "categories": [
+    "planning-ideas",
+    "filming-effects"
+  ],
+  "tags": [
+    "숏폼"
+  ],
+  "durationSeconds": 10,
+  "addedAt": "2026-11-08T20:59:48+09:00",
+  "thumbnail": "media/instagram-DfAb_F8IgxA/scene-0.webp",
+  "scenes": [
+    {
+      "seconds": 0,
+      "image": "media/instagram-DfAb_F8IgxA/scene-0.webp",
+      "description": "주택 평면도 아래쪽 현관 앞에 서 있는 인물."
+    },
+    {
+      "seconds": 2,
+      "image": "media/instagram-DfAb_F8IgxA/scene-2.webp",
+      "description": "현관을 지나 주방 쪽으로 움직이는 인물."
+    },
+    {
+      "seconds": 3,
+      "image": "media/instagram-DfAb_F8IgxA/scene-3.webp",
+      "description": "식탁 옆에 선 인물과 도면 전체가 함께 보이는 장면."
+    },
+    {
+      "seconds": 5,
+      "image": "media/instagram-DfAb_F8IgxA/scene-5.webp",
+      "description": "거실 방향으로 움직이는 인물."
+    },
+    {
+      "seconds": 7,
+      "image": "media/instagram-DfAb_F8IgxA/scene-7.webp",
+      "description": "거실의 소파와 테이블 쪽으로 향하는 인물."
+    },
+    {
+      "seconds": 9,
+      "image": "media/instagram-DfAb_F8IgxA/scene-9.webp",
+      "description": "소파에 앉은 인물과 그 앞의 테이블을 위에서 내려다본 장면."
+    }
+  ],
+  "sourceNote": "Instagram 공개 메타데이터에서 게시 계정과 와인잔 이모지만 있는 게시 설명을 확인했다. 약 10초 영상의 전 구간을 20개 표본 프레임으로 확인하고 실제 장면 6장을 추출했다. 제목은 영상 내용을 바탕으로 정했다."
+}
