@@ -1,0 +1,74 @@
+{
+  "id": "instagram-De_3R0fJb5V",
+  "url": "https://www.instagram.com/reel/De_3R0fJb5V/",
+  "platform": "Instagram",
+  "platformId": "De_3R0fJb5V",
+  "creator": "@absolute.interiors.pl",
+  "title": "카탈로그에서 살아나는 가구",
+  "summary": "책 속 평면 가구 이미지가 종이 위의 작은 입체 가구와 거실 배치로 솟아오르는 아이디어 영상.",
+  "description": "인테리어 카탈로그 속 평면 가구 이미지가 종이 위에서 작은 입체 가구로 솟아오른다. 도면·사진으로만 보던 가구와 배치를 미니어처처럼 보여줘, 설명서를 넘기는 행동 자체를 제품 경험으로 바꾼다. 안락의자, 거실 구성, 수납장, 소파, 작은 의자 순으로 같은 변화를 반복한다. 평면 이미지가 입체로 올라왔다가 다시 평면으로 돌아간 뒤 다음 페이지로 이어져, 같은 규칙을 익힌 관객이 다음 가구를 기대하게 만든다. (연출 해석) 책상 위 책과 비교적 고정된 구도를 유지해 종이 위 사물의 변화에 시선을 모은다. 가구뿐 아니라 건축 설계, 제품 소개, 패션 스케치 등에도 ‘평면 자료가 입체가 되는’ 발상을 응용할 수 있다. (기획 제안)",
+  "descriptionSections": [
+    {
+      "heading": "핵심 아이디어",
+      "text": "인테리어 카탈로그 속 평면 가구 이미지가 종이 위에서 작은 입체 가구로 솟아오른다. 도면·사진으로만 보던 가구와 배치를 미니어처처럼 보여줘, 설명서를 넘기는 행동 자체를 제품 경험으로 바꾼다."
+    },
+    {
+      "heading": "보여주는 방식",
+      "text": "안락의자, 거실 구성, 수납장, 소파, 작은 의자 순으로 같은 변화를 반복한다. 평면 이미지가 입체로 올라왔다가 다시 평면으로 돌아간 뒤 다음 페이지로 이어져, 같은 규칙을 익힌 관객이 다음 가구를 기대하게 만든다. (연출 해석)"
+    },
+    {
+      "heading": "응용 포인트",
+      "text": "책상 위 책과 비교적 고정된 구도를 유지해 종이 위 사물의 변화에 시선을 모은다. 가구뿐 아니라 건축 설계, 제품 소개, 패션 스케치 등에도 ‘평면 자료가 입체가 되는’ 발상을 응용할 수 있다. (기획 제안)"
+    }
+  ],
+  "descriptionModel": "GPT-6.1 Terra",
+  "categories": [
+    "planning-ideas",
+    "filming-effects",
+    "realistic-surreal"
+  ],
+  "tags": [
+    "숏폼"
+  ],
+  "durationSeconds": 15,
+  "addedAt": "2026-11-08T20:56:56+09:00",
+  "thumbnail": "media/instagram-De_3R0fJb5V/scene-0.webp",
+  "scenes": [
+    {
+      "seconds": 0,
+      "image": "media/instagram-De_3R0fJb5V/scene-0.webp",
+      "description": "카탈로그에 인쇄된 안락의자 이미지."
+    },
+    {
+      "seconds": 1,
+      "image": "media/instagram-De_3R0fJb5V/scene-1.webp",
+      "description": "종이 위에서 입체 미니어처처럼 솟은 안락의자."
+    },
+    {
+      "seconds": 4,
+      "image": "media/instagram-De_3R0fJb5V/scene-4.webp",
+      "description": "책 위에 작은 소파·탁자·조명과 식물이 있는 거실 배치가 나타나는 장면."
+    },
+    {
+      "seconds": 7,
+      "image": "media/instagram-De_3R0fJb5V/scene-7.webp",
+      "description": "종이 위에 입체로 선 목재 수납장."
+    },
+    {
+      "seconds": 9,
+      "image": "media/instagram-De_3R0fJb5V/scene-9.webp",
+      "description": "카탈로그에서 입체로 솟아오른 초록색 소파."
+    },
+    {
+      "seconds": 12,
+      "image": "media/instagram-De_3R0fJb5V/scene-12.webp",
+      "description": "펼쳐진 페이지 위에 입체로 나타난 작은 의자."
+    },
+    {
+      "seconds": 14,
+      "image": "media/instagram-De_3R0fJb5V/scene-14.webp",
+      "description": "책을 덮으며 보이는 ABSOLUTE INTERIORS 표지."
+    }
+  ],
+  "sourceNote": "게시 계정과 가구 무드보드·미니어처 소개는 공개 Instagram 게시 설명에서 확인했다. 약 15.08초 영상을 전 구간 20개 표본 프레임으로 살피고 대표 장면 7장을 추출했다. 게시 설명의 3DAnimation 표기는 확인했으나 구체적인 제작 도구와 기법은 별도로 확인하지 않았다."
+}
