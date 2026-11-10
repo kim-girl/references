@@ -100,6 +100,13 @@ test('설명 작성 모델이 있는 영상만 상세 페이지 맨 아래에 �
     }
   }
 });
+test('썸네일 전체를 보이면서 여백을 같은 이미지로 채운다', async () => {
+  const html = await readFile('dist/index.html','utf8');
+  const css = await readFile('dist/style.css','utf8');
+  assert.match(html, /class="card-thumbnail" style="background-image:url\('/);
+  assert.match(css, /\.card-thumbnail::before\{[^}]*filter:blur/);
+  assert.match(css, /:root \.card img\{object-fit:contain/);
+});
 test('남은 초기 샘플 모두 실제 캡처 네 장과 썸네일 포함', async () => {
   for (const file of ['cats.json','steelcut.json']) {
     const video = JSON.parse(await readFile(`content/videos/${file}`,'utf8'));
