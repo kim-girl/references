@@ -1,0 +1,74 @@
+{
+  "id": "instagram-Dej0DJrOtKg",
+  "url": "https://www.instagram.com/reel/Dej0DJrOtKg/",
+  "platform": "Instagram",
+  "platformId": "Dej0DJrOtKg",
+  "creator": "@paulinalouise4",
+  "title": "파리에서 빵을 크게 즐기기 — Go large in Paris",
+  "summary": "거대한 빵과 디저트를 패션·거리 풍경에 섞은 초현실적 파리 상상 영상.",
+  "description": "파리의 빵과 디저트를 거대하게 키우거나 옷·머리 장식·거리 소품으로 바꾼다. 바게트 더미를 안고 걷는 사람, 빵 형태의 치마, 머리 위 프레첼처럼 음식과 패션의 경계를 섞는 발상이 중심이다. 하나의 긴 사건보다 빵을 활용한 서로 다른 짧은 장면을 빠르게 잇는다. 거대한 커피잔과 크루아상, 작은 자동차 지붕 위 빵, 빵을 실은 수레 옆 고양이 등 크기를 뒤집는 장면을 반복해 다음 변주를 기대하게 한다. 후반에는 얼굴과 소품의 클로즈업, 화면 분할을 섞어 리듬을 바꾼다. (연출 해석) 한 지역이나 브랜드를 대표하는 물건 하나를 골라 크기·착용 위치·용도를 바꿔 연속 이미지로 확장하는 방식이다. 패션과 음식, 관광 이미지를 하나의 소재로 연결하는 기획에 참고할 수 있다. (기획 제안)",
+  "descriptionSections": [
+    {
+      "heading": "핵심 아이디어",
+      "text": "파리의 빵과 디저트를 거대하게 키우거나 옷·머리 장식·거리 소품으로 바꾼다. 바게트 더미를 안고 걷는 사람, 빵 형태의 치마, 머리 위 프레첼처럼 음식과 패션의 경계를 섞는 발상이 중심이다."
+    },
+    {
+      "heading": "연출",
+      "text": "하나의 긴 사건보다 빵을 활용한 서로 다른 짧은 장면을 빠르게 잇는다. 거대한 커피잔과 크루아상, 작은 자동차 지붕 위 빵, 빵을 실은 수레 옆 고양이 등 크기를 뒤집는 장면을 반복해 다음 변주를 기대하게 한다. 후반에는 얼굴과 소품의 클로즈업, 화면 분할을 섞어 리듬을 바꾼다. (연출 해석)"
+    },
+    {
+      "heading": "응용 포인트",
+      "text": "한 지역이나 브랜드를 대표하는 물건 하나를 골라 크기·착용 위치·용도를 바꿔 연속 이미지로 확장하는 방식이다. 패션과 음식, 관광 이미지를 하나의 소재로 연결하는 기획에 참고할 수 있다. (기획 제안)"
+    }
+  ],
+  "descriptionModel": "GPT-6.1 Sol",
+  "categories": [
+    "planning-ideas",
+    "realistic-surreal"
+  ],
+  "tags": [
+    "AI 제작",
+    "숏폼"
+  ],
+  "durationSeconds": 15,
+  "addedAt": "2026-11-14T19:22:43+09:00",
+  "thumbnail": "media/instagram-Dej0DJrOtKg/scene-0.webp",
+  "scenes": [
+    {
+      "seconds": 0,
+      "image": "media/instagram-Dej0DJrOtKg/scene-0.webp",
+      "description": "큰 빵 여러 개를 안고 파리풍 상점 앞을 걷는 인물."
+    },
+    {
+      "seconds": 3,
+      "image": "media/instagram-Dej0DJrOtKg/scene-3.webp",
+      "description": "거대한 분홍 커피잔과 크루아상 옆, 빵 형태의 치마를 입은 인물."
+    },
+    {
+      "seconds": 6,
+      "image": "media/instagram-Dej0DJrOtKg/scene-6.webp",
+      "description": "쇼윈도 속 커다란 크루아상 앞에 서 있는 인물."
+    },
+    {
+      "seconds": 8,
+      "image": "media/instagram-Dej0DJrOtKg/scene-8.webp",
+      "description": "작은 자동차 지붕 위 빵 더미와 거리의 인물."
+    },
+    {
+      "seconds": 9,
+      "image": "media/instagram-Dej0DJrOtKg/scene-9.webp",
+      "description": "프레첼을 머리 위에 얹은 인물의 얼굴 클로즈업."
+    },
+    {
+      "seconds": 12,
+      "image": "media/instagram-Dej0DJrOtKg/scene-12.webp",
+      "description": "디저트 모양 머리 장식과 사탕을 든 인물의 얼굴."
+    },
+    {
+      "seconds": 14,
+      "image": "media/instagram-Dej0DJrOtKg/scene-14.webp",
+      "description": "상점 앞 인물과 빵 더미를 위아래 분할 화면으로 보여주는 마무리."
+    }
+  ],
+  "sourceNote": "공개 Instagram 메타데이터에서 게시 계정과 AI Animation이라는 소개를 확인했다. 약 14.84초 원본을 전 구간 20개 표본 프레임으로 살펴보고 실제 대표 장면 7장을 추출했다. 원본의 구체적 제작 도구는 확인하지 않았다."
+}
